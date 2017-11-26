@@ -40,6 +40,15 @@
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 		<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
 	</Item>
+	<Item Name="Get Event ID.vi" Type="VI" URL="../Get Event ID.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;A#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%\!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!"*!-0````])28:F&lt;H1A351!!$:!=!!?!!!C%E6W:7ZU)&amp;.P&gt;8*D:3ZM&gt;GRJ9AV&amp;&gt;G6O&gt;#ZM&gt;G.M98.T!!!*28:F&lt;H1A&lt;X6U!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!.E"Q!"Y!!#)328:F&lt;H1A5W^V=G.F,GRW&lt;'FC$56W:7ZU,GRW9WRB=X-!!!B&amp;&gt;G6O&gt;#"J&lt;A!!6!$Q!!Q!!Q!%!!5!"A!%!!1!"!!%!!=!"!!%!!A$!!"Y!!!.#!!!!!!!!!E!!!#.#Q!!!!!!!!!!!!!!!!!!!!!!!!I!!!!!!!!!!!!!!*!!!!!!!1!*!!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1342710288</Property>
+	</Item>
 	<Item Name="Get Event Name.vi" Type="VI" URL="../Get Event Name.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;A#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$H!!!!"1!%!!!!$E!Q`````Q2/97VF!!!W1(!!(A!!)B*&amp;&gt;G6O&gt;#"4&lt;X6S9W5O&lt;(:M;7).28:F&lt;H1O&lt;(:D&lt;'&amp;T=Q!!#56W:7ZU)%^V&gt;!!W1(!!(A!!)B*&amp;&gt;G6O&gt;#"4&lt;X6S9W5O&lt;(:M;7).28:F&lt;H1O&lt;(:D&lt;'&amp;T=Q!!#%6W:7ZU)%FO!!"B!0!!$!!!!!!!!1!#!!!!!!!!!!!!!!!!!!!!!Q)!!(A!!!!!!!!!!!!!#1!!!!U,!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!%A!!$1!!!!Q!!!!!!!!!!!!!!1!%!!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
@@ -47,7 +56,7 @@
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">8400896</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">794624</Property>
 	</Item>
 	<Item Name="Set Event Name.vi" Type="VI" URL="../Set Event Name.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;A#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!$R!!!!"1!%!!!!.E"Q!"Y!!#)328:F&lt;H1A5W^V=G.F,GRW&lt;'FC$56W:7ZU,GRW9WRB=X-!!!F&amp;&gt;G6O&gt;#"0&gt;81!'%!Q`````QZ/97VF)#B(:7ZF=GFD+1!!.E"Q!"Y!!#)328:F&lt;H1A5W^V=G.F,GRW&lt;'FC$56W:7ZU,GRW9WRB=X-!!!B&amp;&gt;G6O&gt;#"*&lt;A!!91$Q!!Q!!!!!!!!!!1!!!!!!!!!!!!!!!!!#!!-#!!"Y!!!!!!!!!!!!!!!!!!!.#Q!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"%A!!!!I!!!U!!!!-!!!!!!!!!!!!!!%!"!!!!!!</Property>
@@ -56,6 +65,6 @@
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">34078720</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">8396800</Property>
 	</Item>
 </LVClass>

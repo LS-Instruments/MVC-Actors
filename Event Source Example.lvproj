@@ -23,12 +23,12 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Event Source.lvlib" Type="Library" URL="../../Event Source.lvlib"/>
-		<Item Name="Timed Loop Controller.lvlib" Type="Library" URL="../Timed Loop Controller/Timed Loop Controller.lvlib"/>
-		<Item Name="Example Source.lvlib" Type="Library" URL="../Example Source/Example Source.lvlib"/>
-		<Item Name="Example Sink.lvlib" Type="Library" URL="../Example Sink/Example Sink.lvlib"/>
+		<Item Name="Event Source.lvlib" Type="Library" URL="../Event Source.lvlib"/>
+		<Item Name="Timed Loop Controller.lvlib" Type="Library" URL="../Examples/Timed Loop Controller/Timed Loop Controller.lvlib"/>
+		<Item Name="Example Source.lvlib" Type="Library" URL="../Examples/Example Source/Example Source.lvlib"/>
+		<Item Name="Example Sink.lvlib" Type="Library" URL="../Examples/Example Sink/Example Sink.lvlib"/>
 		<Item Name="Example Launcher.vi" Type="VI" URL="../Example Launcher.vi"/>
-		<Item Name="Alternative Example Sink.lvlib" Type="Library" URL="../Alternative Example Sink/Alternative Example Sink.lvlib"/>
+		<Item Name="Alternative Example Sink.lvlib" Type="Library" URL="../Examples/Alternative Example Sink/Alternative Example Sink.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Actor Framework.lvlib" Type="Library" URL="/&lt;vilib&gt;/ActorFramework/Actor Framework.lvlib"/>
@@ -44,6 +44,7 @@
 				<Item Name="Time-Delayed Send Message.vi" Type="VI" URL="/&lt;vilib&gt;/ActorFramework/Time-Delayed Send Message/Time-Delayed Send Message.vi"/>
 				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
 				<Item Name="Single String To Qualified Name Array.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Single String To Qualified Name Array.vi"/>
+				<Item Name="Get LV Class Path.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Path.vi"/>
 			</Item>
 			<Item Name="AF Debug.lvlib" Type="Library" URL="/&lt;resource&gt;/AFDebug/AF Debug.lvlib"/>
 		</Item>

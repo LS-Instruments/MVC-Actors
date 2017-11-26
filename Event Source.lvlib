@@ -11,6 +11,7 @@
 		<Item Name="Generate Event Msg.lvclass" Type="LVClass" URL="../Event Source Messages/Generate Event Msg/Generate Event Msg.lvclass"/>
 		<Item Name="Receive and Broadcast Event Msg.lvclass" Type="LVClass" URL="../Event Source Messages/Receive and Broadcast Event Msg/Receive and Broadcast Event Msg.lvclass"/>
 		<Item Name="Register by Name Msg.lvclass" Type="LVClass" URL="../Event Source Messages/Register by Name Msg/Register by Name Msg.lvclass"/>
+		<Item Name="Register Events to Source Msg.lvclass" Type="LVClass" URL="../Event Sink Messages/Register Events to Source Msg/Register Events to Source Msg.lvclass"/>
 		<Item Name="Register Msg.lvclass" Type="LVClass" URL="../Event Source Messages/Register Msg/Register Msg.lvclass"/>
 		<Item Name="Unregister by Name Msg.lvclass" Type="LVClass" URL="../Event Source Messages/Unregister by Name Msg/Unregister by Name Msg.lvclass"/>
 		<Item Name="Unregister Event Msg.lvclass" Type="LVClass" URL="../Event Source Messages/Unregister Event Msg/Unregister Event Msg.lvclass"/>
