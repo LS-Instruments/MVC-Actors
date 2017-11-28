@@ -25,10 +25,11 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Event Source.lvlib" Type="Library" URL="../Event Source.lvlib"/>
 		<Item Name="Timed Loop Controller.lvlib" Type="Library" URL="../Examples/Timed Loop Controller/Timed Loop Controller.lvlib"/>
-		<Item Name="Example Source.lvlib" Type="Library" URL="../Examples/Example Source/Example Source.lvlib"/>
 		<Item Name="Example Sink.lvlib" Type="Library" URL="../Examples/Example Sink/Example Sink.lvlib"/>
-		<Item Name="Example Launcher.vi" Type="VI" URL="../Example Launcher.vi"/>
+		<Item Name="Example Source.lvlib" Type="Library" URL="../Examples/Example Source/Example Source.lvlib"/>
 		<Item Name="Alternative Example Sink.lvlib" Type="Library" URL="../Examples/Alternative Example Sink/Alternative Example Sink.lvlib"/>
+		<Item Name="Example Launcher.vi" Type="VI" URL="../Examples/Example Launcher.vi"/>
+		<Item Name="Untitled 1.vi" Type="VI" URL="../Examples/Alternative Example Sink/Example Sink/Untitled 1.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Actor Framework.lvlib" Type="Library" URL="/&lt;vilib&gt;/ActorFramework/Actor Framework.lvlib"/>

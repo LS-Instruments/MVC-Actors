@@ -10,5 +10,8 @@
 		<Item Name="Timestamp Event.lvclass" Type="LVClass" URL="../Example Events/Timestamp Event.lvclass"/>
 		<Item Name="Boolean Event.lvclass" Type="LVClass" URL="../Example Events/Boolean Event.lvclass"/>
 	</Item>
+	<Item Name="Messages for this Actor" Type="Folder">
+		<Item Name="Update Boolean Msg.lvclass" Type="LVClass" URL="../Example Source Messages/Update Boolean Msg/Update Boolean Msg.lvclass"/>
+	</Item>
 	<Item Name="Example Source.lvclass" Type="LVClass" URL="../Example Source/Example Source.lvclass"/>
 </Library>

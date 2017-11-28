@@ -4,6 +4,9 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">369131520</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
+	<Item Name="Abstract Source Event Handler" Type="Folder">
+		<Item Name="Abstract Source Event Handler.lvclass" Type="LVClass" URL="../Event Source Messages/Abstract Source Event Handler/Abstract Source Event Handler.lvclass"/>
+	</Item>
 	<Item Name="Event Broadcasting Abstract Msg" Type="Folder">
 		<Item Name="Event Generated Msg.lvclass" Type="LVClass" URL="../Event Source Messages/Event Generated Msg/Event Generated Msg.lvclass"/>
 	</Item>
