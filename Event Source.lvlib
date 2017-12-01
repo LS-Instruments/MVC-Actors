@@ -11,15 +11,22 @@
 		<Item Name="Event Generated Msg.lvclass" Type="LVClass" URL="../Event Source Messages/Event Generated Msg/Event Generated Msg.lvclass"/>
 	</Item>
 	<Item Name="Messages for this Actor" Type="Folder">
+		<Item Name="Add Sink Msg.lvclass" Type="LVClass" URL="../Event Source Messages/Add Sink Msg/Add Sink Msg.lvclass"/>
 		<Item Name="Generate Event Msg.lvclass" Type="LVClass" URL="../Event Source Messages/Generate Event Msg/Generate Event Msg.lvclass"/>
+		<Item Name="Read Registered Sinks Msg.lvclass" Type="LVClass" URL="../Event Source Messages/Read Registered Sinks Msg/Read Registered Sinks Msg.lvclass"/>
+		<Item Name="Read Sink Settings Msg.lvclass" Type="LVClass" URL="../Event Source Messages/Read Sink Settings Msg/Read Sink Settings Msg.lvclass"/>
 		<Item Name="Receive and Broadcast Event Msg.lvclass" Type="LVClass" URL="../Event Source Messages/Receive and Broadcast Event Msg/Receive and Broadcast Event Msg.lvclass"/>
 		<Item Name="Register by Name Msg.lvclass" Type="LVClass" URL="../Event Source Messages/Register by Name Msg/Register by Name Msg.lvclass"/>
 		<Item Name="Register Events to Source Msg.lvclass" Type="LVClass" URL="../Event Sink Messages/Register Events to Source Msg/Register Events to Source Msg.lvclass"/>
 		<Item Name="Register Msg.lvclass" Type="LVClass" URL="../Event Source Messages/Register Msg/Register Msg.lvclass"/>
+		<Item Name="Remove Sink Msg.lvclass" Type="LVClass" URL="../Event Source Messages/Remove Sink Msg/Remove Sink Msg.lvclass"/>
 		<Item Name="Unregister by Name Msg.lvclass" Type="LVClass" URL="../Event Source Messages/Unregister by Name Msg/Unregister by Name Msg.lvclass"/>
 		<Item Name="Unregister Event Msg.lvclass" Type="LVClass" URL="../Event Source Messages/Unregister Event Msg/Unregister Event Msg.lvclass"/>
 		<Item Name="Unregister Msg.lvclass" Type="LVClass" URL="../Event Source Messages/Unregister Msg/Unregister Msg.lvclass"/>
 		<Item Name="Write Event Source Enqueuer Msg.lvclass" Type="LVClass" URL="../Event Sink Messages/Write Event Source Enqueuer Msg/Write Event Source Enqueuer Msg.lvclass"/>
+		<Item Name="Write Paused Msg.lvclass" Type="LVClass" URL="../Event Sink Messages/Write Paused Msg/Write Paused Msg.lvclass"/>
+		<Item Name="Write Receive Only Msg.lvclass" Type="LVClass" URL="../Event Sink Messages/Write Receive Only Msg/Write Receive Only Msg.lvclass"/>
+		<Item Name="Write Sink Settings Msg.lvclass" Type="LVClass" URL="../Event Source Messages/Write Sink Settings Msg/Write Sink Settings Msg.lvclass"/>
 	</Item>
 	<Item Name="Event Sink.lvclass" Type="LVClass" URL="../Event Sink/Event Sink.lvclass"/>
 	<Item Name="Event Source.lvclass" Type="LVClass" URL="../Event Source/Event Source.lvclass"/>
