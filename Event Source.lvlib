@@ -4,6 +4,7 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">369131520</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
+	<Property Name="NI.SortType" Type="Int">3</Property>
 	<Item Name="Abstract Source Event Handler" Type="Folder">
 		<Item Name="Abstract Source Event Handler.lvclass" Type="LVClass" URL="../Event Source Messages/Abstract Source Event Handler/Abstract Source Event Handler.lvclass"/>
 	</Item>
@@ -27,6 +28,20 @@
 		<Item Name="Write Paused Msg.lvclass" Type="LVClass" URL="../Event Sink Messages/Write Paused Msg/Write Paused Msg.lvclass"/>
 		<Item Name="Write Receive Only Msg.lvclass" Type="LVClass" URL="../Event Sink Messages/Write Receive Only Msg/Write Receive Only Msg.lvclass"/>
 		<Item Name="Write Sink Settings Msg.lvclass" Type="LVClass" URL="../Event Source Messages/Write Sink Settings Msg/Write Sink Settings Msg.lvclass"/>
+	</Item>
+	<Item Name="Events Data Types" Type="Folder">
+		<Item Name="Event Void.lvclass" Type="LVClass" URL="../Event Data Types/Event Void/Event Void.lvclass"/>
+		<Item Name="Event String.lvclass" Type="LVClass" URL="../Event Data Types/Event String/Event String.lvclass"/>
+		<Item Name="Event Boolean.lvclass" Type="LVClass" URL="../Event Data Types/Event Boolean/Event Boolean.lvclass"/>
+		<Item Name="Event Double.lvclass" Type="LVClass" URL="../Event Data Types/Event Double/Event Double.lvclass"/>
+		<Item Name="Event I64.lvclass" Type="LVClass" URL="../Event Data Types/Event I64/Event I64.lvclass"/>
+		<Item Name="Event I32.lvclass" Type="LVClass" URL="../Event Data Types/Event I32/Event I32.lvclass"/>
+		<Item Name="Event I16.lvclass" Type="LVClass" URL="../Event Data Types/Event I16/Event I16.lvclass"/>
+		<Item Name="Event I8.lvclass" Type="LVClass" URL="../Event Data Types/Event I8/Event I8.lvclass"/>
+		<Item Name="Event U64.lvclass" Type="LVClass" URL="../Event Data Types/Event U64/Event U64.lvclass"/>
+		<Item Name="Event U32.lvclass" Type="LVClass" URL="../Event Data Types/Event U32/Event U32.lvclass"/>
+		<Item Name="Event U16.lvclass" Type="LVClass" URL="../Event Data Types/Event U16/Event U16.lvclass"/>
+		<Item Name="Event U8.lvclass" Type="LVClass" URL="../Event Data Types/Event U8/Event U8.lvclass"/>
 	</Item>
 	<Item Name="Event Sink.lvclass" Type="LVClass" URL="../Event Sink/Event Sink.lvclass"/>
 	<Item Name="Event Source.lvclass" Type="LVClass" URL="../Event Source/Event Source.lvclass"/>
