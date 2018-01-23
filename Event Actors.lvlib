@@ -7,12 +7,13 @@
 	<Property Name="NI.SortType" Type="Int">3</Property>
 	<Item Name="Messages for this Actor" Type="Folder">
 		<Item Name="Event Handlers" Type="Folder">
-			<Item Name="Abstract Event Handler for Controller Actor.lvclass" Type="LVClass" URL="../Event Handlers/Abstract Event Handler for Controller Actor/Abstract Event Handler for Controller Actor.lvclass"/>
-			<Item Name="Event Generated Msg.lvclass" Type="LVClass" URL="../Event Handlers/Event Generated Msg/Event Generated Msg.lvclass"/>
+			<Item Name="Abstract Event Handler for Controller.lvclass" Type="LVClass" URL="../Event Handlers/Abstract Event Handler for Controller/Abstract Event Handler for Controller.lvclass"/>
+			<Item Name="Abstract Event Message for View.lvclass" Type="LVClass" URL="../Event Handlers/Abstract Event Message for View/Abstract Event Message for View.lvclass"/>
 		</Item>
 		<Item Name="Controller Actor" Type="Folder">
 			<Item Name="Register by Name Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Register by Name Msg/Register by Name Msg.lvclass"/>
 			<Item Name="Unregister by Name Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Unregister by Name Msg/Unregister by Name Msg.lvclass"/>
+			<Item Name="Handle Event Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Handle Event Msg/Handle Event Msg.lvclass"/>
 			<Item Name="Handle and Broadcast Event Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Handle and Broadcast Event Msg/Handle and Broadcast Event Msg.lvclass"/>
 			<Item Name="Generate Event Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Generate Event Msg/Generate Event Msg.lvclass"/>
 			<Item Name="Add View Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Add View Msg/Add View Msg.lvclass"/>
