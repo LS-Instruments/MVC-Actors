@@ -36,6 +36,7 @@
 			<Item Name="Timed Loop Controller.lvlib" Type="Library" URL="../Examples/Timed Loop Controller/Timed Loop Controller.lvlib"/>
 			<Item Name="Example Controller Actor.lvlib" Type="Library" URL="../Examples/Example Controller Actor/Example Controller Actor.lvlib"/>
 			<Item Name="Example View Actor.lvlib" Type="Library" URL="../Examples/Example View Actor/Example View Actor.lvlib"/>
+			<Item Name="Down Casting Example.vi" Type="VI" URL="../Examples/Down Casting Example.vi"/>
 		</Item>
 		<Item Name="Event Actors.lvlib" Type="Library" URL="../Event Actors.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
