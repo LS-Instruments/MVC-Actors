@@ -32,13 +32,19 @@
 				<Item Name="Timestamp Event.lvclass" Type="LVClass" URL="../Examples/Example Events/Timestamp Event.lvclass"/>
 				<Item Name="Boolean Event.lvclass" Type="LVClass" URL="../Examples/Example Events/Boolean Event.lvclass"/>
 			</Item>
-			<Item Name="Example Launcher.vi" Type="VI" URL="../Examples/Example Launcher.vi"/>
-			<Item Name="Timed Loop Controller.lvlib" Type="Library" URL="../Examples/Timed Loop Controller/Timed Loop Controller.lvlib"/>
-			<Item Name="Example Controller Actor.lvlib" Type="Library" URL="../Examples/Example Controller Actor/Example Controller Actor.lvlib"/>
-			<Item Name="Example View Actor.lvlib" Type="Library" URL="../Examples/Example View Actor/Example View Actor.lvlib"/>
-			<Item Name="Down Casting Example.vi" Type="VI" URL="../Examples/Down Casting Example.vi"/>
+			<Item Name="Event Actors" Type="Folder">
+				<Item Name="Example View Actor.lvlib" Type="Library" URL="../Examples/Example View Actor/Example View Actor.lvlib"/>
+				<Item Name="Example Launcher.vi" Type="VI" URL="../Examples/Example Launcher.vi"/>
+				<Item Name="Timed Loop Controller.lvlib" Type="Library" URL="../Examples/Timed Loop Controller/Timed Loop Controller.lvlib"/>
+				<Item Name="Example Controller Actor.lvlib" Type="Library" URL="../Examples/Example Controller Actor/Example Controller Actor.lvlib"/>
+			</Item>
+			<Item Name="GUI Views" Type="Folder">
+				<Item Name="Example GUI Views Launcher.vi" Type="VI" URL="../Examples/Example GUI Views Launcher.vi"/>
+				<Item Name="Example GUI View Actor.lvlib" Type="Library" URL="../Examples/Example GUI View Actor/Example GUI View Actor.lvlib"/>
+			</Item>
 		</Item>
 		<Item Name="Event Actors.lvlib" Type="Library" URL="../Event Actors.lvlib"/>
+		<Item Name="GUI Views.lvlib" Type="Library" URL="../GUI Views/GUI Views.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Actor Framework.lvlib" Type="Library" URL="/&lt;vilib&gt;/ActorFramework/Actor Framework.lvlib"/>
@@ -57,6 +63,11 @@
 				<Item Name="Get LV Class Path.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Path.vi"/>
 				<Item Name="NI_SystemLogging.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/SystemLogging/NI_SystemLogging.lvlib"/>
 				<Item Name="High Resolution Relative Seconds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/High Resolution Relative Seconds.vi"/>
+				<Item Name="Reply Msg.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/ActorFramework/Reply Msg/Reply Msg.lvclass"/>
+			</Item>
+			<Item Name="user.lib" Type="Folder">
+				<Item Name="Clear All Errors__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/Clear All Errors__ogtk.vi"/>
+				<Item Name="Build Error Cluster__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/Build Error Cluster__ogtk.vi"/>
 			</Item>
 			<Item Name="AF Debug.lvlib" Type="Library" URL="/&lt;resource&gt;/AFDebug/AF Debug.lvlib"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
@@ -93,7 +104,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{62285D03-2BE5-43A3-A9AD-F5F389C7D0ED}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Examples/Example Launcher.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Examples/Event Actors/Example Launcher.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
