@@ -1,0 +1,4 @@
+*GET CURRENT VALUE UPON EVENT REGISTRATION: add an abstract method to the event class, this method has the controller as terminal and is in charge of getting the data form the controller and fill in the event data. This method is then used in Event Actors.lvlib:Controller Actor.lvclass:Register.vi to get an event objet with present data to be sent to the view upon registration of the event if in the registration this feature is required by suitable input parameter
+
+*GET LAST BORADCAST DATA: set up a new variant dictionary in the class containing the latest braodcast event per event , update it in Event Actors.lvlib:Controller Actor.lvclass:Broadcast Event.vi and Event Actors.lvlib:Controller Actor.lvclass:Generate Controller Event.vi. If a suitable oprion is true in Event Actors.lvlib:Controller Actor.lvclass:Register.vi get the last boradcast event and send it to the view, if the event is not found in the boradcasted event dictionary don send it to the view 
+

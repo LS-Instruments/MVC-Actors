@@ -45,6 +45,7 @@
 		</Item>
 		<Item Name="Event Actors.lvlib" Type="Library" URL="../Event Actors.lvlib"/>
 		<Item Name="GUI Views.lvlib" Type="Library" URL="../GUI Views/GUI Views.lvlib"/>
+		<Item Name="New Features.txt" Type="Document" URL="../New Features.txt"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Actor Framework.lvlib" Type="Library" URL="/&lt;vilib&gt;/ActorFramework/Actor Framework.lvlib"/>
