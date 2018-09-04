@@ -1,4 +1,10 @@
 *GET CURRENT VALUE UPON EVENT REGISTRATION: add an abstract method to the event class, this method has the controller as terminal and is in charge of getting the data form the controller and fill in the event data. This method is then used in Event Actors.lvlib:Controller Actor.lvclass:Register.vi to get an event objet with present data to be sent to the view upon registration of the event if in the registration this feature is required by suitable input parameter
 
-*GET LAST BORADCAST DATA: set up a new variant dictionary in the class containing the latest braodcast event per event , update it in Event Actors.lvlib:Controller Actor.lvclass:Broadcast Event.vi and Event Actors.lvlib:Controller Actor.lvclass:Generate Controller Event.vi. If a suitable oprion is true in Event Actors.lvlib:Controller Actor.lvclass:Register.vi get the last boradcast event and send it to the view, if the event is not found in the boradcasted event dictionary don send it to the view 
+*GET LAST BORADCAST DATA: set up a new variant dictionary in the class containing the latest braodcast event per event , update it in Event Actors.lvlib:Controller Actor.lvclass:Broadcast Event.vi and Event Actors.lvlib:Controller Actor.lvclass:Generate Controller Event.vi. If a suitable oprion is true in Event Actors.lvlib:Controller Actor.lvclass:Register.vi get the last boradcast event and send it to the view, if the event is not found in the boradcasted event dictionary don send it to the view
+Implementation.
+- define a new typedef conaining a variant and and abstract event
+- in Event Actors.lvlib:Controller Actor.lvclass:Add Event.vi for the View Event Handlers Dict instead of adding an empty variant add an empty typedef as of above point
+- in Event Actors.lvlib:Controller Actor.lvclass:Generate Controller Event.vi and Event Actors.lvlib:Controller Actor.lvclass:Broadcast Event.vi store the event being broad cast in the new typedef correspondig to the event
+- add a controller object boolean option enabing or disabling this feature
+- in Event Actors.lvlib:Controller Actor.lvclass:Register.vi add an input terminal option to enable disable the seinfing and send the event if the option to the view accordingly and if the option is enabled as above in the object
 
