@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="17008000">
+<Project Type="Project" LVVersion="23008000">
 	<Property Name="CCSymbols" Type="Str">AF_Debug_Trace,TRUE;</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
@@ -30,6 +30,7 @@
 			<Item Name="Events" Type="Folder">
 				<Item Name="Double Array Event.lvclass" Type="LVClass" URL="../Examples/Example Events/Double Array Event.lvclass"/>
 				<Item Name="Timestamp Event.lvclass" Type="LVClass" URL="../Examples/Example Events/Timestamp Event.lvclass"/>
+				<Item Name="Inited At Event.lvclass" Type="LVClass" URL="../Examples/Example Events/Inited At Event.lvclass"/>
 				<Item Name="Boolean Event.lvclass" Type="LVClass" URL="../Examples/Example Events/Boolean Event.lvclass"/>
 			</Item>
 			<Item Name="Event Actors" Type="Folder">
@@ -46,6 +47,7 @@
 		<Item Name="Event Actors.lvlib" Type="Library" URL="../Event Actors.lvlib"/>
 		<Item Name="GUI Views.lvlib" Type="Library" URL="../GUI Views/GUI Views.lvlib"/>
 		<Item Name="New Features.txt" Type="Document" URL="../New Features.txt"/>
+		<Item Name="Event Actors Release Notes.txt" Type="Document" URL="../Event Actors Release Notes.txt"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Actor Framework.lvlib" Type="Library" URL="/&lt;vilib&gt;/ActorFramework/Actor Framework.lvlib"/>
@@ -65,16 +67,17 @@
 				<Item Name="NI_SystemLogging.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/SystemLogging/NI_SystemLogging.lvlib"/>
 				<Item Name="High Resolution Relative Seconds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/High Resolution Relative Seconds.vi"/>
 				<Item Name="Reply Msg.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/ActorFramework/Reply Msg/Reply Msg.lvclass"/>
+				<Item Name="Casting Utility For Actors.vim" Type="VI" URL="/&lt;vilib&gt;/ActorFramework/Actor/Casting Utility For Actors.vim"/>
 			</Item>
 			<Item Name="user.lib" Type="Folder">
-				<Item Name="Clear All Errors__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/Clear All Errors__ogtk.vi"/>
-				<Item Name="Build Error Cluster__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/Build Error Cluster__ogtk.vi"/>
+				<Item Name="openg_error.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/openg_error.lvlib"/>
 			</Item>
 			<Item Name="AF Debug.lvlib" Type="Library" URL="/&lt;resource&gt;/AFDebug/AF Debug.lvlib"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
+			<Item Name="IView.lvlib" Type="Library" URL="../../../Hardware Controller/Source/LSI Hardware Controller/LSI View Root Actor/View Interface/IView.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Eventer" Type="EXE">
@@ -82,6 +85,7 @@
 				<Property Name="App_INI_aliasGUID" Type="Str">{FBE782A2-966B-4A64-A4AA-24B6FC2FA998}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{10AA3F4D-CD87-46B9-8382-57515D061CE7}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_serverType" Type="Int">1</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{B41AB380-260B-45AF-9209-BED6AE23ACBA}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">Eventer</Property>

@@ -1,0 +1,3 @@
+Event Actors Release Notes
+v1.1.0
+* Added the ability to finalize the initialization of views to provide tools to the controller to generate events to the just initialized Views to update them about the current Controller status (Closes #4365)
