@@ -34,10 +34,7 @@
 				<Item Name="Boolean Event.lvclass" Type="LVClass" URL="../Examples/Example Events/Boolean Event.lvclass"/>
 			</Item>
 			<Item Name="Event Actors" Type="Folder">
-				<Item Name="Example View Actor.lvlib" Type="Library" URL="../Examples/Example View Actor/Example View Actor.lvlib"/>
-				<Item Name="Example Launcher.vi" Type="VI" URL="../Examples/Example Launcher.vi"/>
-				<Item Name="Timed Loop Controller.lvlib" Type="Library" URL="../Examples/Timed Loop Controller/Timed Loop Controller.lvlib"/>
-				<Item Name="Example Controller Actor.lvlib" Type="Library" URL="../Examples/Example Controller Actor/Example Controller Actor.lvlib"/>
+				<Item Name="Example Event Actors.lvlib" Type="Library" URL="../Examples/Example Event Actors.lvlib"/>
 			</Item>
 			<Item Name="GUI Views" Type="Folder">
 				<Item Name="Example GUI Views Launcher.vi" Type="VI" URL="../Examples/Example GUI Views Launcher.vi"/>
@@ -55,14 +52,6 @@
 				<Item Name="Get LV Class Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Name.vi"/>
 				<Item Name="Time-Delay Override Options.ctl" Type="VI" URL="/&lt;vilib&gt;/ActorFramework/Time-Delayed Send Message/Time-Delay Override Options.ctl"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
-				<Item Name="Monitored Actor.lvlib" Type="Library" URL="/&lt;vilib&gt;/MGI/Monitored Actor/Monitored Actor.lvlib"/>
-				<Item Name="Monitor Data.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/MGI/Monitored Actor/Monitor Data/Monitor Data.lvclass"/>
-				<Item Name="LVRowAndColumnUnsignedTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRowAndColumnUnsignedTypeDef.ctl"/>
-				<Item Name="LVRowAndColumnTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRowAndColumnTypeDef.ctl"/>
-				<Item Name="Time-Delayed Send Message Core.vi" Type="VI" URL="/&lt;vilib&gt;/ActorFramework/Time-Delayed Send Message/Time-Delayed Send Message Core.vi"/>
-				<Item Name="Time-Delayed Send Message.vi" Type="VI" URL="/&lt;vilib&gt;/ActorFramework/Time-Delayed Send Message/Time-Delayed Send Message.vi"/>
-				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
-				<Item Name="Single String To Qualified Name Array.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Single String To Qualified Name Array.vi"/>
 				<Item Name="Get LV Class Path.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Path.vi"/>
 				<Item Name="NI_SystemLogging.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/SystemLogging/NI_SystemLogging.lvlib"/>
 				<Item Name="High Resolution Relative Seconds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/High Resolution Relative Seconds.vi"/>
@@ -109,7 +98,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{62285D03-2BE5-43A3-A9AD-F5F389C7D0ED}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Examples/Event Actors/Example Launcher.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Examples/Event Actors/Example Event Actors.lvlib/Example Launcher.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
