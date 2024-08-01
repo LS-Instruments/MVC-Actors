@@ -11,20 +11,20 @@
 			<Item Name="Abstract Event Message for View.lvclass" Type="LVClass" URL="../Event Handlers/Abstract Event Message for View/Abstract Event Message for View.lvclass"/>
 		</Item>
 		<Item Name="Controller Actor" Type="Folder">
-			<Item Name="Register by Name Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Register by Name Msg/Register by Name Msg.lvclass"/>
-			<Item Name="Unregister by Name Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Unregister by Name Msg/Unregister by Name Msg.lvclass"/>
-			<Item Name="Handle Event Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Handle Event Msg/Handle Event Msg.lvclass"/>
-			<Item Name="Handle and Broadcast Event Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Handle and Broadcast Event Msg/Handle and Broadcast Event Msg.lvclass"/>
-			<Item Name="Generate Controller Event Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Generate Controller Event Msg/Generate Controller Event Msg.lvclass"/>
-			<Item Name="Add View Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Add View Msg/Add View Msg.lvclass"/>
-			<Item Name="Remove View Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Remove View Msg/Remove View Msg.lvclass"/>
-			<Item Name="Register Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Register Msg/Register Msg.lvclass"/>
-			<Item Name="Unregister Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Unregister Msg/Unregister Msg.lvclass"/>
-			<Item Name="Unregister Event Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Unregister Event Msg/Unregister Event Msg.lvclass"/>
-			<Item Name="Read Registered Views Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Read Registered Views Msg/Read Registered Views Msg.lvclass"/>
-			<Item Name="Write View Settings Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Write View Settings Msg/Write View Settings Msg.lvclass"/>
-			<Item Name="Read View Settings Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Read View Settings Msg/Read View Settings Msg.lvclass"/>
-			<Item Name="Finalize View Init Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Finalize View Init Msg/Finalize View Init Msg.lvclass"/>
+			<Item Name="API" Type="Folder">
+				<Item Name="Remove View Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Remove View Msg/Remove View Msg.lvclass"/>
+				<Item Name="Read View Settings Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Read View Settings Msg/Read View Settings Msg.lvclass"/>
+				<Item Name="Write View Settings Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Write View Settings Msg/Write View Settings Msg.lvclass"/>
+				<Item Name="Generate Controller Event Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Generate Controller Event Msg/Generate Controller Event Msg.lvclass"/>
+				<Item Name="Add View Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Add View Msg/Add View Msg.lvclass"/>
+			</Item>
+			<Item Name="API Internal" Type="Folder">
+				<Item Name="Register by Name Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Register by Name Msg/Register by Name Msg.lvclass"/>
+				<Item Name="Unregister by Name Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Unregister by Name Msg/Unregister by Name Msg.lvclass"/>
+				<Item Name="Handle and Broadcast Event Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Handle and Broadcast Event Msg/Handle and Broadcast Event Msg.lvclass"/>
+				<Item Name="Handle Event Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Handle Event Msg/Handle Event Msg.lvclass"/>
+				<Item Name="Finalize View Init Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Finalize View Init Msg/Finalize View Init Msg.lvclass"/>
+			</Item>
 		</Item>
 		<Item Name="View Actor" Type="Folder">
 			<Item Name="Write Controller Actor Enqueuer Msg.lvclass" Type="LVClass" URL="../View Actor Messages/Write Controller Actor Enqueuer Msg/Write Controller Actor Enqueuer Msg.lvclass"/>
@@ -33,6 +33,8 @@
 			<Item Name="Register Events to Controller Msg.lvclass" Type="LVClass" URL="../View Actor Messages/Register Events to Controller Msg/Register Events to Controller Msg.lvclass"/>
 			<Item Name="Generate and Broadcast Event Msg.lvclass" Type="LVClass" URL="../View Actor Messages/Generate and Broadcast Event Msg/Generate and Broadcast Event Msg.lvclass"/>
 			<Item Name="Generate View Event Msg.lvclass" Type="LVClass" URL="../View Actor Messages/Generate View Event Msg/Generate View Event Msg.lvclass"/>
+			<Item Name="Register Event Msg.lvclass" Type="LVClass" URL="../View Actor Messages/Register Event Msg/Register Event Msg.lvclass"/>
+			<Item Name="Unregister Event Msg.lvclass" Type="LVClass" URL="../View Actor Messages/Unregister Event Msg/Unregister Event Msg.lvclass"/>
 		</Item>
 	</Item>
 	<Item Name="Events for Data Types" Type="Folder">

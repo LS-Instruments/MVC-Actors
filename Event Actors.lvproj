@@ -25,6 +25,11 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Documentation" Type="Folder">
 			<Item Name="Event Actors Documentation.docx" Type="Document" URL="../Documentation/Event Actors Documentation.docx"/>
+			<Item Name="README.md" Type="Document" URL="../README.md"/>
+		</Item>
+		<Item Name="Dependencies" Type="Folder">
+			<Item Name="openg_error.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/openg_error.lvlib"/>
+			<Item Name="Async Methods Actor.lvlib" Type="Library" URL="/&lt;vilib&gt;/LS Instruments AG/Async Methods Actor/Async Methods Actor/Async Methods Actor.lvlib"/>
 		</Item>
 		<Item Name="Examples" Type="Folder">
 			<Item Name="Events" Type="Folder">
@@ -37,14 +42,13 @@
 				<Item Name="Example Event Actors.lvlib" Type="Library" URL="../Examples/Example Event Actors.lvlib"/>
 			</Item>
 			<Item Name="GUI Views" Type="Folder">
-				<Item Name="Example GUI Views Launcher.vi" Type="VI" URL="../Examples/Example GUI Views Launcher.vi"/>
 				<Item Name="Example GUI View Actor.lvlib" Type="Library" URL="../Examples/Example GUI View Actor/Example GUI View Actor.lvlib"/>
 			</Item>
 		</Item>
 		<Item Name="Event Actors.lvlib" Type="Library" URL="../Event Actors.lvlib"/>
 		<Item Name="GUI Views.lvlib" Type="Library" URL="../GUI Views/GUI Views.lvlib"/>
-		<Item Name="New Features.txt" Type="Document" URL="../New Features.txt"/>
 		<Item Name="Event Actors Release Notes.txt" Type="Document" URL="../Event Actors Release Notes.txt"/>
+		<Item Name="LICENSE" Type="Document" URL="../LICENSE"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Actor Framework.lvlib" Type="Library" URL="/&lt;vilib&gt;/ActorFramework/Actor Framework.lvlib"/>
@@ -57,9 +61,23 @@
 				<Item Name="High Resolution Relative Seconds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/High Resolution Relative Seconds.vi"/>
 				<Item Name="Reply Msg.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/ActorFramework/Reply Msg/Reply Msg.lvclass"/>
 				<Item Name="Casting Utility For Actors.vim" Type="VI" URL="/&lt;vilib&gt;/ActorFramework/Actor/Casting Utility For Actors.vim"/>
+				<Item Name="Convert Map to Array__vipm_lv_collection_ext.vim" Type="VI" URL="/&lt;vilib&gt;/VIPM/Collection_Extensions/Map/Convert Map to Array__vipm_lv_collection_ext.vim"/>
+				<Item Name="Report Error Msg.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/ActorFramework/Report Error Msg/Report Error Msg.lvclass"/>
+				<Item Name="Get Keys from Map__vipm_lv_collection_ext.vim" Type="VI" URL="/&lt;vilib&gt;/VIPM/Collection_Extensions/Map/Get Keys from Map__vipm_lv_collection_ext.vim"/>
+				<Item Name="Synchronize Data Flow.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/Synchronize Data Flow.vim"/>
+				<Item Name="Create Empty Map__vipm_lv_collection_ext.vim" Type="VI" URL="/&lt;vilib&gt;/VIPM/Collection_Extensions/Map/Create Empty Map__vipm_lv_collection_ext.vim"/>
+				<Item Name="Get LV Class Default Value By Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Default Value By Name.vi"/>
+				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
+				<Item Name="LV70DateRecToTimeStamp.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/LV70DateRecToTimeStamp.vi"/>
+				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
+				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
+				<Item Name="Qualified Name Array To Single String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Qualified Name Array To Single String.vi"/>
+				<Item Name="Create NI GUID.vi" Type="VI" URL="/&lt;vilib&gt;/string/Create NI GUID.vi"/>
+				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
+				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
 			</Item>
 			<Item Name="user.lib" Type="Folder">
-				<Item Name="openg_error.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/openg_error.lvlib"/>
+				<Item Name="openg_variant.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/openg_variant.lvlib"/>
 			</Item>
 			<Item Name="AF Debug.lvlib" Type="Library" URL="/&lt;resource&gt;/AFDebug/AF Debug.lvlib"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
