@@ -1,9 +1,9 @@
 # MVC Actors
-A library that extends the Actor Framework to allow for Model View Controller (MVC) patterns based on an Event Publisher/Subscriber mechanism.
+A library that extends the Actor Framework to allow for Model View Controller (MVC) patterns based on a bidirectional event publisher/subscriber mechanism.
 
 This library allows the implementation of MVC patterns within the Actor Framework. Controller Actors define View Actors and Events; View Actors can subscribe to a subset of such events. Events can be fired either by the Controller Actors to all the View Actors and handled by them by suitable Even Handlers defined upon subscription or by View Actors to the Controller Actor, in the latter case the Controller Actor will handle them by means of suitable Event Handlers defined upon definition of the Events and will in turn broadcast the event to all the View actors but the one from which the Event originated. 
 
-The library further provides children of the View Actor that provide tools to allow for the GUI Management of the Front Panels of the Actor Cores of suitable concrete implementations. The **"GUI View Actor"** is a subclass of the View Actor that provides the functionality to manage the Front Panel (Opening, Closing, Activation, Minimization, Maximization, Hiding, etc.) of all the **“Actor Core.vi”**s of the whole actor class hierarchy. The **"GUI Container Actor"** is a subclass of the **"GUI View Actor"** that provides the infrastructure for the management of Subpanels present in their **“Actor Core.vi”** allowing inserting and removing the Front Panel of the **“Actor Core.vi”** s of the whole actor class hierarchy defined by any subclass of the **"GUI View Actor"**.
+The library further provides children of the View Actor that implement tools to allow for the GUI Management of the Front Panels of the Actor Cores of suitable concrete implementations. The **"GUI View Actor"** is a subclass of the View Actor that provides the functionality to manage the Front Panel (Opening, Closing, Activation, Minimization, Maximization, Hiding, etc.) of all the **“Actor Core.vi”** of the whole actor class hierarchy. The **"GUI Container Actor"** is a subclass of the **"GUI View Actor"** that provides the infrastructure for the management of Subpanels present in its **“Actor Core.vi”** allowing inserting and removing the Front Panel of the **“Actor Core.vi”** of the whole actor class hierarchy defined by any subclass of the **"GUI View Actor"**.
 
 
 ## Quick Start Guide
@@ -30,7 +30,7 @@ The library further provides children of the View Actor that provide tools to al
 ![](Media/Initialize%20Views.png)
 
 
-You will now be ready to implement your controller logic, the model that will interact the controller and the view logic. To generate and broadcast an event form the view execute the **"Generate and Broadcast Event.vi"** method, to generate and event form the controller execute the **"Generate Controller Event.vi"** method.
+You will now be ready to implement your controller logic, the model that will interact the controller and the view logic. To generate and broadcast an event form the view execute the **"Generate and Broadcast Event.vi"/"Send Generate and Broadcast Event.vi"** methods, to generate and event form the controller execute the **"Generate Controller Event.vi"/"Send Generate Controller Event.vi"** methods.
 
 ### GUI Views
 To implement GUI Views you have to perform the same steps as for normal views, however now you will have to subclass either the **"GUI View Actor.lvclass"** or the **"GUI Container Actor"** depending on your needs. For the **"GUI Container Actor"** perform the following additional steps
@@ -42,7 +42,10 @@ To implement GUI Views you have to perform the same steps as for normal views, h
 ![](Media/Store%20Subpanels%20References.png)
 
 **Optional:**
-* Register to the **Views User Events Refs** and **Exit Loop User Event Ref** user defined events provided by the **"GUI Container Actor**. The former allows you receive an array of strings containing the names of the views currently active, the latter is a user event fired when the the method **"Exit Event Loop.vi"** is executed and is a convenience infrastructure useful when creating an event structures within the **"Actor COre.vi"**
+* Call the **"Register to Container Events.vi"** method to register to the **Views User Events Refs** and **Exit Loop User Event Ref** user defined events provided by the **"GUI Container Actor**. The former allows you receive an array of strings containing the names of the views currently active, the latter is a user event fired when the the method **"Exit Event Loop.vi"** is executed and is a convenience infrastructure useful when creating an event structures within the **"Actor Core.vi"**
+
+![](Media/Register_to_User_Events.png)
+
 * Exit the event loop mentioned above by calling the **"Exit Event Loop.vi"** method.
 
 ![](Media/Exit%20Event%20Loop.png)
