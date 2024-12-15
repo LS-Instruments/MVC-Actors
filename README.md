@@ -82,12 +82,12 @@ This dynamic dispatch VI has to be overridden by the concrete Controller Actor s
 ![](Media/Add_View_Method.png)
 ![](Media/Send_Add_View_Method.png)
 
-*Execute the **"Add View.vi"** version from other Controller methods, specifically form the **"Initilaize Views.vi" method**. If you want to initialize views in any other manner, e.g. form an **"Actror Core.vi"** method then use **"Send Add View.vi"***
+*Execute the **"Add View.vi"** version from other Controller methods, specifically form the **"Initialize Views.vi" method**. If you want to initialize views in any other manner, e.g. form an **"Actor Core.vi"** method then use **"Send Add View.vi"***
 
 Starts a View Actor with following settings:
 
-**Exclude From Broadcast**: message originating form another view will not be broadcasted to the view being cosidered
-**Paused**: the view will not send events and will not receive them anymore
+**Exclude From Broadcast**: message originating form another view will not be broadcast to the view being considered    
+**Paused**: the view will not send events and will not receive them anymore  
 **Receive only**: The view will receive events but not send any
 
 ### The "Remove View.vi"/"Send Remove View.vi" methods
@@ -95,11 +95,11 @@ Starts a View Actor with following settings:
 ![](Media/Remove_View_Method.png)
 ![](Media/Send_Remove_View_Method.png)
 
-*Execute the **"Remove View.vi"** version from other Controller methods. If you want to remove views in any other manner, e.g. form an **"Actror Core.vi"** method then use **"Send Remove View.vi"***
+*Execute the **"Remove View.vi"** version from other Controller methods. If you want to remove views in any other manner, e.g. form an **"Actor Core.vi"** method then use **"Send Remove View.vi"***
 
 Stops and removes a View actor as specified by his name. Can remove all the Views if the **"Remove All (F)"** is set to true
 
-### The "Generate Event to View.vi" method
+### The "Generate Controller Event.vi" method
 ![](Media/Generate_Controller_Event_Method.png)
 
 This method generates/fires the Event wired to the input. Firing an event looks up all actors who Registered to listen to this Event and sends to them this Event on a Zero Coupling based message defined during Registration. Errors on broadcasting the event i.e. enqueuer of the registrant not existing, are ignored.
@@ -111,8 +111,10 @@ This method generates/fires the Event wired to the input. Firing an event looks 
 
 Allows  the child controller to get the behavior of a View actor specified in the **View Name** by registering to the user defined event whose reference is accessible by the **View Settings Event Ref** property that will deliver the following settings:
 
-**Exclude From Broadcast**: message originating form another View will not be broadcast to the View being considered
-**Paused**: the View will not send events and will not receive them anymore
+![](Media/View%20Settings.png)
+
+**Exclude From Broadcast**: message originating form another View will not be broadcast to the View being considered  
+**Paused**: the View will not send events and will not receive them anymore  
 **Receive only**: The View will receive events but not send any
 
 ### The "Send Write View Settings.vi" method
@@ -120,14 +122,16 @@ Allows  the child controller to get the behavior of a View actor specified in th
 
 Allows to set the View behavior by setting the following flags:
 
-**Exclude From Broadcast**: message originating form another View will not be broadcast to the View being considered
-**Paused**: the View will not send events and will not receive them anymore
+![](Media/View%20Settings.png)
+
+**Exclude From Broadcast**: message originating form another View will not be broadcast to the View being considered  
+**Paused**: the View will not send events and will not receive them anymore  
 **Receive only**: The View will receive events but not send any
 
 ### The "Finalize View Init.vi" method
 ![](Media/Finalize_View_Init_Method.png)
 
-Override this method to finalize Views' initialization by generating Controller events to the View specified in the "View Name" input terminal. To this end you can call the method **"Generate Event to View.vi"**. A typical use case is that of generating Controller events to update the Views upon init about the current state of the Controller.
+Override this method to finalize Views' initialization by generating Controller events to the View specified in the **"View Name"** input terminal. To this end you can call the method **"Generate Event to View.vi"**. A typical use case is that of generating Controller events to update the Views upon init about the current state of the Controller.
 
 ### The "Generate Event to View.vi" method
 ![](Media/Generate_Event_to_View_Method.png)

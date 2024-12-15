@@ -27,14 +27,16 @@
 			</Item>
 		</Item>
 		<Item Name="View Actor" Type="Folder">
+			<Item Name="API" Type="Folder">
+				<Item Name="Generate and Broadcast Event Msg.lvclass" Type="LVClass" URL="../View Actor Messages/Generate and Broadcast Event Msg/Generate and Broadcast Event Msg.lvclass"/>
+				<Item Name="Unregister Event Msg.lvclass" Type="LVClass" URL="../View Actor Messages/Unregister Event Msg/Unregister Event Msg.lvclass"/>
+				<Item Name="Generate View Event Msg.lvclass" Type="LVClass" URL="../View Actor Messages/Generate View Event Msg/Generate View Event Msg.lvclass"/>
+				<Item Name="Register Event Msg.lvclass" Type="LVClass" URL="../View Actor Messages/Register Event Msg/Register Event Msg.lvclass"/>
+			</Item>
 			<Item Name="Write Controller Actor Enqueuer Msg.lvclass" Type="LVClass" URL="../View Actor Messages/Write Controller Actor Enqueuer Msg/Write Controller Actor Enqueuer Msg.lvclass"/>
 			<Item Name="Write Paused Msg.lvclass" Type="LVClass" URL="../View Actor Messages/Write Paused Msg/Write Paused Msg.lvclass"/>
 			<Item Name="Write Receive Only Msg.lvclass" Type="LVClass" URL="../View Actor Messages/Write Receive Only Msg/Write Receive Only Msg.lvclass"/>
 			<Item Name="Register Events to Controller Msg.lvclass" Type="LVClass" URL="../View Actor Messages/Register Events to Controller Msg/Register Events to Controller Msg.lvclass"/>
-			<Item Name="Generate and Broadcast Event Msg.lvclass" Type="LVClass" URL="../View Actor Messages/Generate and Broadcast Event Msg/Generate and Broadcast Event Msg.lvclass"/>
-			<Item Name="Generate View Event Msg.lvclass" Type="LVClass" URL="../View Actor Messages/Generate View Event Msg/Generate View Event Msg.lvclass"/>
-			<Item Name="Register Event Msg.lvclass" Type="LVClass" URL="../View Actor Messages/Register Event Msg/Register Event Msg.lvclass"/>
-			<Item Name="Unregister Event Msg.lvclass" Type="LVClass" URL="../View Actor Messages/Unregister Event Msg/Unregister Event Msg.lvclass"/>
 		</Item>
 	</Item>
 	<Item Name="Events for Data Types" Type="Folder">
