@@ -1,9 +1,9 @@
 # MVC Actors
-A library that extends the Actor Framework to allow for Model View Controller (MVC) patterns based on a bidirectional event publisher/subscriber mechanism.
+A library that extends the "Send Generate View Event.vi" to allow for **Model View Controller (MVC)** patterns based on a bidirectional event publisher/subscriber mechanism.
 
-This library allows the implementation of MVC patterns within the Actor Framework. Controller Actors define View Actors and Events; View Actors can subscribe to a subset of such events. Events can be fired either by the Controller Actors to all the View Actors and handled by them by suitable Even Handlers defined upon subscription or by View Actors to the Controller Actor, in the latter case the Controller Actor will handle them by means of suitable Event Handlers defined upon definition of the Events and will in turn broadcast the event to all the View actors but the one from which the Event originated. 
+This library allows the implementation of MVC patterns within the Actor Framework. **"Controller Actors"** define **"View Actors"** and **"Events"**; View Actors can subscribe to a subset of such events. Events can be fired either by the Controller Actors to all the View Actors and handled by them by suitable **Event Handlers** defined upon subscription or by View Actors to the Controller Actor, in the latter case the Controller Actor will handle them by means of suitable **Event Handlers** defined upon definition of the Events and will in turn broadcast the event to all the View actors but the one from which the Event originated. 
 
-The library further provides children of the View Actor that implement tools to allow for the GUI Management of the Front Panels of the Actor Cores of suitable concrete implementations. The **"GUI View Actor"** is a subclass of the View Actor that provides the functionality to manage the Front Panel (Opening, Closing, Activation, Minimization, Maximization, Hiding, etc.) of all the **“Actor Core.vi”** of the whole actor class hierarchy. The **"GUI Container Actor"** is a subclass of the **"GUI View Actor"** that provides the infrastructure for the management of Subpanels present in its **“Actor Core.vi”** allowing inserting and removing the Front Panel of the **“Actor Core.vi”** of the whole actor class hierarchy defined by any subclass of the **"GUI View Actor"**.
+The library further provides children of the **View Actor** that implement tools to allow for the GUI Management of the Front Panels of the Actor Cores of suitable concrete implementations. The **"GUI View Actor"** is a subclass of the "View Actor" that provides the functionality to manage the Front Panel (Opening, Closing, Activation, Minimization, Maximization, Hiding, etc.) of all the **“Actor Core.vi”** of the whole actor class hierarchy. The **"GUI Container Actor"** is a subclass of the **"GUI View Actor"** that provides the infrastructure for the management of Subpanels present in its **“Actor Core.vi”** allowing inserting and removing the Front Panel of the **“Actor Core.vi”** of the whole actor class hierarchy defined by any subclass of the **"GUI View Actor"**.
 
 
 ## Quick Start Guide
@@ -30,7 +30,7 @@ The library further provides children of the View Actor that implement tools to 
 ![](Media/Initialize%20Views.png)
 
 
-You will now be ready to implement your controller logic, the model that will interact the controller and the view logic. To generate and broadcast an event form the view execute the **"Generate and Broadcast Event.vi"/"Send Generate and Broadcast Event.vi"** methods, to generate and event form the controller execute the **"Generate Controller Event.vi"/"Send Generate Controller Event.vi"** methods.
+You will now be ready to implement your controller logic, the model that will interact the controller and the view logic. To generate and broadcast an event from the view execute the **"Generate and Broadcast Event.vi"/"Send Generate and Broadcast Event.vi"** methods, to generate and event from the controller execute the **"Generate Controller Event.vi"/"Send Generate Controller Event.vi"** methods.
 
 ### GUI Views
 To implement GUI Views you have to perform the same steps as for normal views, however now you will have to subclass either the **"GUI View Actor.lvclass"** or the **"GUI Container Actor"** depending on your needs. For the **"GUI Container Actor"** perform the following additional steps
@@ -63,13 +63,13 @@ A child of the "Controller Actor.lvclass" defines a set of events (by overloadin
 
 ![](Media/Define_Events_Method.png)
 
-This dynamic dispatch VI has to be overriden by the concrete Controller Actor subclasses in order to define the event served by the Controller Actor.
+This dynamic dispatch VI has to be overridden by the concrete Controller Actor subclasses in order to define the event served by the Controller Actor.
 
 ### The "Add Event.vi" methods
 
 ![](Media/Add_Event_Method.png)
 
-This method adds an event to the list of the events handled by the Controller Actor. If the Controller Actor wants to handle the events form the View, a **"Controller Event Fire Handler"** should be wired.
+This method adds an event to the list of the events handled by the Controller Actor. If the Controller Actor wants to handle the events from the View, a **"Controller Event Fire Handler"** should be wired.
 
 ### The "Initilaize Views.vi" method
 
@@ -82,11 +82,11 @@ This dynamic dispatch VI has to be overridden by the concrete Controller Actor s
 ![](Media/Add_View_Method.png)
 ![](Media/Send_Add_View_Method.png)
 
-*Execute the **"Add View.vi"** version from other Controller methods, specifically form the **"Initialize Views.vi" method**. If you want to initialize views in any other manner, e.g. form an **"Actor Core.vi"** method then use **"Send Add View.vi"***
+*Execute the **"Add View.vi"** version from other Controller methods, specifically from the **"Initialize Views.vi" method**. If you want to initialize views in any other manner, e.g. from an **"Actor Core.vi"** method then use **"Send Add View.vi"***
 
 Starts a View Actor with following settings:
 
-**Exclude From Broadcast**: message originating form another view will not be broadcast to the view being considered    
+**Exclude From Broadcast**: message originating from another view will not be broadcast to the view being considered    
 **Paused**: the view will not send events and will not receive them anymore  
 **Receive only**: The view will receive events but not send any
 
@@ -95,7 +95,7 @@ Starts a View Actor with following settings:
 ![](Media/Remove_View_Method.png)
 ![](Media/Send_Remove_View_Method.png)
 
-*Execute the **"Remove View.vi"** version from other Controller methods. If you want to remove views in any other manner, e.g. form an **"Actor Core.vi"** method then use **"Send Remove View.vi"***
+*Execute the **"Remove View.vi"** version from other Controller methods. If you want to remove views in any other manner, e.g. from an **"Actor Core.vi"** method then use **"Send Remove View.vi"***
 
 Stops and removes a View actor as specified by his name. Can remove all the Views if the **"Remove All (F)"** is set to true
 
@@ -113,7 +113,7 @@ Allows  the child controller to get the behavior of a View actor specified in th
 
 ![](Media/View%20Settings.png)
 
-**Exclude From Broadcast**: message originating form another View will not be broadcast to the View being considered  
+**Exclude From Broadcast**: message originating from another View will not be broadcast to the View being considered  
 **Paused**: the View will not send events and will not receive them anymore  
 **Receive only**: The View will receive events but not send any
 
@@ -124,7 +124,7 @@ Allows to set the View behavior by setting the following flags:
 
 ![](Media/View%20Settings.png)
 
-**Exclude From Broadcast**: message originating form another View will not be broadcast to the View being considered  
+**Exclude From Broadcast**: message originating from another View will not be broadcast to the View being considered  
 **Paused**: the View will not send events and will not receive them anymore  
 **Receive only**: The View will receive events but not send any
 
@@ -138,4 +138,41 @@ Override this method to finalize Views' initialization by generating Controller 
 
 Generates the event **Event** to the View Actor with name **View Name**. This is typically used in the overridden method "Finalize View Init.vi"  to init a specific View Actor upon its launch.
 
+## The "View Actor.lvclass"  Class
+A child of the **"View Actor.lvclass"**, the View, is inited by a certain Controller that defines a set of Events as subclasses of the **"Event.lvclass"** class. The View can subscribe to a subset, if not all, the events defined by the Controller and handle them by subclassing the **"Abstract Event Handler for View"** message and implementing its **Do.vi** method. Subscription can be performed by implementing the **"Register Events to Controller.vi"** abstract method, which is called upon the View's launch. Therein events are subscribed by calling the **"Register Event.vi"** method providing suitable Event Handlers. Defining at least one handler is mandatory.
 
+### The "Generate and Broadcast Event.vi"/"Send Generate and Broadcast Event.vi" Methods
+
+![](Media/Generate_and_Broadcast_Event_Method.png)
+![](Media/Send_Generate_and_Broadcast_Event_Method.png) 
+
+This method generates/fires the **Event** wired to the input. The method checks if the view is paused or "Receive Only" and then sends the **"Generate and Broadcast Event"** message to the associated controller. The controller will in turn send the **Event** to all the Views who registered to that event but the originating View.
+
+**IMPORTANT** - Call this method directly (i.e. without sending the corresponding message) only within the View methods. From helper loops send the corresponding message to self by calling the suitable send method. This is to make sure your View works with up-to-date settings.
+
+### The "Register Event.vi"/"Send Register Event.vi" Methods  
+
+![](Media/Register_Events_Method.png)
+![](Media/Send_Register_Events_Method.png)  
+  
+Registers an **Event** to the Controller by specifying the concrete event and the corresponding **Event Handler**. If **"Get Last Broadcast Event (F)"** is TRUE the View will receive the last broadcast **Event**.
+
+*Execute the **"Register Event.vi"** version from other View methods. If you want to register events in any other manner, e.g. from an **"Actor Core.vi"** method then use **"Send Register Event.vi"***
+
+### The "Unregister Event.vi"/"Send Unregister Event.vi" Methods  
+
+![](Media/Unregister_Events_Method.png)
+![](Media/Send_Unegister_Events_Method.png)  
+  
+Unregisters an **Event** to the Controller by specifying the concrete event.
+
+*Execute the **"Unregister Event.vi"** version from other View methods. If you want to unregister events in any other manner, e.g. from an **"Actor Core.vi"** method then use **"Send Unregister Event.vi"***
+
+### The "Generate View Event.vi"/"Send Generate View Event.vi" Methods  
+
+![](Media/Generate_View_Event_Method.png)
+![](Media/Send_Generate_View_Event_Method.png)  
+  
+This method generates/fires the **Event** wired to the input. Firing an event checks if the view is paused or "Receive Only" . This event will not be broadcast to other Views.
+
+*Execute the **"Generate View Event.vi"** version from other View methods. If you want to generate View events in any other manner, e.g. from an **"Actor Core.vi"** method then use **"Send Generate View Event.vi"***
