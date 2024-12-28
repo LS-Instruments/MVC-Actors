@@ -198,3 +198,134 @@ Concrete subclasses of this class once created must be wired to the suitable cal
 ![](Media/Read_Event_Data_Method.png)
 
 Reads the **Event** data from the concrete implementation of the **"Abstract Event Message for View.lvclass"** abstract message sent to **View**. This method should be called within the concrete **"Do.vi"** method to read the **Event** data to be used as an argument to the call of the **View**  method designated to handle the corresponding Event.
+
+## The "GUI View.lvclass" Class
+The actor **GUI View** is a subclass of the **View** that provides basic functionality for the front panel management of the **View's** **"Actor Core.vi"** VIs. Users can open, close, and set the front panel state. Since the **GUI View** can be infinitely subclassed, users can act on each of the front panels defined in the class hierarchy.
+
+### The "Open Front Panel.vi" Method
+
+![](Media/Open_Front_Panel_Method.png)
+
+Opens the Front Panel of a specified **Actor Core.vi** VI of the specified **GUI View** class hierarchy. The method is active only if the GUI View is not contained.
+
+**View Hierarchy Level**: The level on the subclassing hierarchy of the **GUI View**, it is used to choose the **Actor Core.vi** Front Panel among all the existing subclasses of the **GUI View** present in the **View** specified above.
+
+**Activate?**: If FALSE (default), the front panel window does not open as the active window. If TRUE, the front panel window opens as the active window.
+
+**Front Panel Window:State**: Sets the state in which to open the front panel window.
+
+* **0	Invalid** - If you set the input to this value, the method returns an error.
+* **1	Standard (default)** - Opens the front panel window but does not minimize, maximize, or hide the window.
+* **2	Closed** - If you set the input to this value, the method returns an error.
+* **3	Hidden** - Opens the front panel window as floating but not visible. If you set the input to this value and close all references to the front panel, the window remains open but hidden. Because the VI is open, the Getting Started window does not appear. To solve this problem, open the VI from the operating system. For example, on Windows, double-click the VI in Windows Explorer to open the VI.
+* **4	Minimized** - Opens the front panel window as minimized.
+* **5	Maximized** - Opens the front panel window as maximized.
+
+### The "Close Front Panel.vi" Method
+
+![](Media/Close_Front_Panel_Method.png)
+
+Closes the Front Panel of a specified **Actor Core.vi** VI of the specified **GUI View** class hierarchy. The method is active only if the **GUI View** is not contained. 
+
+**View Hierarchy Level**: The level on the subclassing hierarchy of the **GUI View**, it is used to choose the **Actor Core.vi** Front Panel among all the existing subclasses of the **GUI View** present in the **View** specified above.
+
+### The "Set Front Panel State.vi" Method
+
+![](Media/Set_Front_Panel_State_Method.png)
+
+Sets the state of the Front Panel of a specified **Actor Core.vi** VI of the specified View class hierarchy. The method is active only if the GUI View is not contained.
+
+**View Hierarchy Level**: The level on the subclassing hierarchy of the **GUI View**, it is used to choose the **Actor Core.vi** Front Panel among all the existing subclasses of the **GUI View** present in the **View** specified above.
+
+**Front Panel Window:State**: Sets the state in which to open the front panel window.
+
+* **0	Invalid** - If you set the input to this value, the method returns an error.
+* **1	Standard (default)** - Opens the front panel window but does not minimize, maximize, or hide the window.
+* **2	Closed** - If you set the input to this value, the method returns an error.
+* **3	Hidden** - Opens the front panel window as floating but not visible. If you set the input to this value and close all references to the front panel, the window remains open but hidden. Because the VI is open, the Getting Started window does not appear. To solve this problem, open the VI from the operating system. For example, on Windows, double-click the VI in Windows Explorer to open the VI.
+* **4	Minimized** - Opens the front panel window as minimized.
+* **5	Maximized** - Opens the front panel window as maximized.
+
+## The "GUI Container.lvclass" Class
+The actor **GUI Container** is in a subclass of the **GUI View** that adds all the infrastructure required to contain GUI Views in subpanels. Once **GUI Views** are contained in a certain **GUI Container** their management is done through the methods provided by the **GUI Container**. Subpanels are defined in the **GUI Container**'s **Actor Core.vi** by explicitly storing their references in the actor by means of an appropriate method and are referenced by their label name. **GUI Views** are instead referenced by their name as of their definition in the corresponding controller. For each contained **GUI View** the **GUI Container** provides all the front panel management functionality provided by the **GUI View** plus: 
+* adding and removing **GUI Views**
+* inserting and removing a **GUI View** from an available subpanel
+* reading the contained **GUI Views** names.
+
+All the functionality is implemented by hiding from the user all the low-level front panel management required by LabVIEW, for example there is no need to remove a GUI View from a subpanel when inserting it in another subpanel.
+
+### The "Store Subpanel References.vi" Method
+![](Media/Store_Subpanel_References_Method.png)
+
+This method is used within the **Actor Core.vi** of the concrete **GUI Container** to store the references of the subpanels present in its front panel and that we want to use as containers.
+
+**Subpanel References**: Array of subpanel refnums to be used as containers for **GUI Views**
+
+### The "Insert View into Subpanel.vi" Method
+![](Media/Insert_View_into_Subpanel_Method.png)
+
+Inserts the Front Panel of a specified **Actor Core** VI of the specified **GUI View** class hierarchy into a specified subpanel
+
+**View**: String that contains the name of the **GUI View**
+
+**View Hierarchy Level**: The level on the subclassing hierarchy of the **GUI View**, it is used to choose the **Actor Core.vi** Front Panel  among all the existing subclasses of the **GUI VIew** specified above
+
+**Subpanel**: string designating in which subpanel the Front Panel specified in the above terminals has to be inserted.
+
+### The "Remove View into Subpanel.vi" Method
+![](Media/Remove_View_into_Subpanel_Method.png)
+
+Removes the Front Panel of a specified **Actor Core.vi** VI of the specified **GUI View** class hierarchy from a specified subpanel
+
+**Subpanel**: string designating in which subpanel the Front Panel specified in the above terminals has to be inserted.
+
+### The "Open View FP.vi" Method
+
+![](Media/Open_View_FP_Method.png)
+
+Opens the Front Panel of a specified **Actor Core.vi** VI of the specified **GUI View** class hierarchy.
+
+**View**: String that contains the name of the View
+
+**View Hierarchy Level**: The level on the subclassing hierarchy of the **GUI View**, it is used to choose the **Actor Core.vi** Front Panel among all the existing subclasses of the **GUI View** present in the **View** specified above.
+
+**Activate?**: If FALSE (default), the front panel window does not open as the active window. If TRUE, the front panel window opens as the active window.
+
+**State on Open (Standard)**: Sets the state in which to open the front panel window.
+
+* **0	Invalid** - If you set the input to this value, the method returns an error.
+* **1	Standard (default)** - Opens the front panel window but does not minimize, maximize, or hide the window.
+* **2	Closed** - If you set the input to this value, the method returns an error.
+* **3	Hidden** - Opens the front panel window as floating but not visible. If you set the input to this value and close all references to the front panel, the window remains open but hidden. Because the VI is open, the Getting Started window does not appear. To solve this problem, open the VI from the operating system. For example, on Windows, double-click the VI in Windows Explorer to open the VI.
+* **4	Minimized** - Opens the front panel window as minimized.
+* **5	Maximized** - Opens the front panel window as maximized.
+
+### The "Close View FP.vi" Method
+
+![](Media/Close_View_FP_Method.png)
+
+Closes the Front Panel of a specified **Actor Core.vi** VI of the specified **GUI View** class hierarchy. 
+
+**View**: String that contains the name of the View
+
+**View Hierarchy Level**: The level on the subclassing hierarchy of the **GUI View**, it is used to choose the **Actor Core.vi** Front Panel among all the existing subclasses of the **GUI View** present in the **View** specified above.
+
+### The "Set Front Panel State.vi" Method
+
+![](Media/Set_View_FP_State_Method.png)
+
+Sets the state of the Front Panel of a specified **Actor Core.vi** VI of the the specified **GUI View** class hierarchy. 
+
+**View**: String that contains the name of the GUI View
+
+**View Hierarchy Level**: The level on the subclassing hierarchy of the **GUI View**, it is used to choose the **Actor Core.vi** Front Panel among all the existing subclasses of the **GUI View** present in the **View** specified above.
+
+**Front Panel Window:State**: Sets the state in which to open the front panel window.
+
+* **0	Invalid** - If you set the input to this value, the method returns an error.
+* **1	Standard (default)** - Opens the front panel window but does not minimize, maximize, or hide the window.
+* **2	Closed** - If you set the input to this value, the method returns an error.
+* **3	Hidden** - Opens the front panel window as floating but not visible. If you set the input to this value and close all references to the front panel, the window remains open but hidden. Because the VI is open, the Getting Started window does not appear. To solve this problem, open the VI from the operating system. For example, on Windows, double-click the VI in Windows Explorer to open the VI.
+* **4	Minimized** - Opens the front panel window as minimized.
+* **5	Maximized** - Opens the front panel window as maximized.
+
