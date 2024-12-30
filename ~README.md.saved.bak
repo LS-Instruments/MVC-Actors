@@ -103,7 +103,7 @@ Stops and removes a View actor as specified by his name. Can remove all the View
 ![](Media/Generate_Controller_Event_Method.png)
 ![](Media/Send_Generate_Controller_Event_Method.png)
 
-This method generates/fires the Event wired to the input. Firing an event looks up all actors who Registered to listen to this Event and sends to them this Event on a Zero Coupling based message defined during Registration. Errors on broadcasting the event i.e. enqueuer of the registrant not existing, are ignored.
+This method generates/fires the Event wired to the input. Firing an event looks up all actors who registered to listen to this Event and sends to them this Event on a Zero Coupling based message defined during registration. Errors on broadcasting the event i.e. enqueuer of the registrant not existing, are ignored.
 
 **IMPORTANT** - Only call this method within actor core of your Controller Actor. From helper loops call the Send Generate Event message to self. This is to make sure your actor works with all registered listeners.
 
