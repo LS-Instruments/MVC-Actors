@@ -103,7 +103,7 @@ Stops and removes a View actor as specified by his name. Can remove all the View
 ![](Media/Generate_Controller_Event_Method.png)
 ![](Media/Send_Generate_Controller_Event_Method.png)
 
-This method generates/fires the Event wired to the input. Firing an event looks up all actors who Registered to listen to this Event and sends to them this Event on a Zero Coupling based message defined during Registration. Errors on broadcasting the event i.e. enqueuer of the registrant not existing, are ignored.
+This method generates/fires the Event wired to the input. Firing an event looks up all actors who registered to listen to this Event and sends to them this Event on a Zero Coupling based message defined during registration. Errors on broadcasting the event i.e. enqueuer of the registrant not existing, are ignored.
 
 **IMPORTANT** - Only call this method within actor core of your Controller Actor. From helper loops call the Send Generate Event message to self. This is to make sure your actor works with all registered listeners.
 
@@ -203,9 +203,10 @@ Reads the **Event** data from the concrete implementation of the **"Abstract Eve
 ## The "GUI View.lvclass" Class
 The actor **GUI View** is a subclass of the **View** that provides basic functionality for the front panel management of the **View's** **"Actor Core.vi"** VIs. Users can open, close, and set the front panel state. Since the **GUI View** can be infinitely subclassed, users can act on each of the front panels defined in the class hierarchy.
 
-### The "Open Front Panel.vi" Method
+### The "Open Front Panel.vi"/"Send Open Front Panel.vi" Methods
 
 ![](Media/Open_Front_Panel_Method.png)
+![](Media/Send_Open_Front_Panel_Method.png)
 
 Opens the Front Panel of a specified **Actor Core.vi** VI of the specified **GUI View** class hierarchy. The method is active only if the GUI View is not contained.
 
@@ -222,17 +223,19 @@ Opens the Front Panel of a specified **Actor Core.vi** VI of the specified **GUI
 * **4	Minimized** - Opens the front panel window as minimized.
 * **5	Maximized** - Opens the front panel window as maximized.
 
-### The "Close Front Panel.vi" Method
+### The "Close Front Panel.vi"/"Send Close Front Panel.vi" Methods
 
 ![](Media/Close_Front_Panel_Method.png)
+![](Media/Send_Close_Front_Panel_Method.png)
 
 Closes the Front Panel of a specified **Actor Core.vi** VI of the specified **GUI View** class hierarchy. The method is active only if the **GUI View** is not contained. 
 
 **View Hierarchy Level**: The level on the subclassing hierarchy of the **GUI View**, it is used to choose the **Actor Core.vi** Front Panel among all the existing subclasses of the **GUI View** present in the **View** specified above.
 
-### The "Set Front Panel State.vi" Method
+### The "Set Front Panel State.vi"/"Send Set Front Panel State.vi" Methods
 
 ![](Media/Set_Front_Panel_State_Method.png)
+![](Media/Send_Set_Front_Panel_State_Method.png)
 
 Sets the state of the Front Panel of a specified **Actor Core.vi** VI of the specified View class hierarchy. The method is active only if the GUI View is not contained.
 

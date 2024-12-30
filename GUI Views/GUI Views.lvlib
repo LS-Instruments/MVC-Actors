@@ -17,9 +17,11 @@
 			<Item Name="Set View FP State Msg.lvclass" Type="LVClass" URL="../GUI Container Actor Messages/Set View FP State Msg/Set View FP State Msg.lvclass"/>
 		</Item>
 		<Item Name="GUI View Actor" Type="Folder">
-			<Item Name="Close Front Panel Msg.lvclass" Type="LVClass" URL="../GUI View Actor Messages/Close Front Panel Msg/Close Front Panel Msg.lvclass"/>
-			<Item Name="Open Front Panel Msg.lvclass" Type="LVClass" URL="../GUI View Actor Messages/Open Front Panel Msg/Open Front Panel Msg.lvclass"/>
-			<Item Name="Set Front Panel State Msg.lvclass" Type="LVClass" URL="../GUI View Actor Messages/Set Front Panel State Msg/Set Front Panel State Msg.lvclass"/>
+			<Item Name="API" Type="Folder">
+				<Item Name="Close Front Panel Msg.lvclass" Type="LVClass" URL="../GUI View Actor Messages/Close Front Panel Msg/Close Front Panel Msg.lvclass"/>
+				<Item Name="Open Front Panel Msg.lvclass" Type="LVClass" URL="../GUI View Actor Messages/Open Front Panel Msg/Open Front Panel Msg.lvclass"/>
+				<Item Name="Set Front Panel State Msg.lvclass" Type="LVClass" URL="../GUI View Actor Messages/Set Front Panel State Msg/Set Front Panel State Msg.lvclass"/>
+			</Item>
 		</Item>
 	</Item>
 	<Item Name="GUI Container Actor.lvclass" Type="LVClass" URL="../GUI Container Actor/GUI Container Actor.lvclass"/>
