@@ -272,7 +272,7 @@ Inserts the Front Panel of a specified **Actor Core** VI of the specified **GUI 
 
 **Subpanel**: string designating in which subpanel the Front Panel specified in the above terminals has to be inserted.
 
-### The "Remove View into Subpanel.vi" Method
+### The "Remove View from Subpanel.vi" Method
 ![](Media/Remove_View_into_Subpanel_Method.png)
 
 Removes the Front Panel of a specified **Actor Core.vi** VI of the specified **GUI View** class hierarchy from a specified subpanel
@@ -310,7 +310,7 @@ Closes the Front Panel of a specified **Actor Core.vi** VI of the specified **GU
 
 **View Hierarchy Level**: The level on the subclassing hierarchy of the **GUI View**, it is used to choose the **Actor Core.vi** Front Panel among all the existing subclasses of the **GUI View** present in the **View** specified above.
 
-### The "Set Front Panel State.vi" Method
+### The "Set View FP State.vi" Method
 
 ![](Media/Set_View_FP_State_Method.png)
 
@@ -329,3 +329,8 @@ Sets the state of the Front Panel of a specified **Actor Core.vi** VI of the the
 * **4	Minimized** - Opens the front panel window as minimized.
 * **5	Maximized** - Opens the front panel window as maximized.
 
+### The "Register to Container Events.vi" Method
+
+![](Media/Register_to_Container_Events_Method.png)
+
+This method can be used in the **Actor Core.vi** of the subclass of the **GUI Container Actor**. It will register two events created by the **GUI Container Actor**, one can be used to exit the helper loop if present, and the other can be used to allow the optional event loop to receive the views contained by the "GUI Container Actor". Calling this method is optional. See the examples for an illustration of its usage.
