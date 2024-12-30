@@ -23,10 +23,6 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Documentation" Type="Folder">
-			<Item Name="Event Actors Documentation.docx" Type="Document" URL="../Documentation/Event Actors Documentation.docx"/>
-			<Item Name="README.md" Type="Document" URL="../README.md"/>
-		</Item>
 		<Item Name="Dependencies" Type="Folder">
 			<Item Name="openg_error.lvlib" Type="Library" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/openg_error.lvlib"/>
 			<Item Name="Async Methods Actor.lvlib" Type="Library" URL="/&lt;vilib&gt;/LS Instruments AG/Async Methods Actor/Async Methods Actor/Async Methods Actor.lvlib"/>
@@ -49,6 +45,7 @@
 		<Item Name="GUI Views.lvlib" Type="Library" URL="../GUI Views/GUI Views.lvlib"/>
 		<Item Name="Event Actors Release Notes.txt" Type="Document" URL="../Event Actors Release Notes.txt"/>
 		<Item Name="LICENSE" Type="Document" URL="../LICENSE"/>
+		<Item Name="README.md" Type="Document" URL="../README.md"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Actor Framework.lvlib" Type="Library" URL="/&lt;vilib&gt;/ActorFramework/Actor Framework.lvlib"/>

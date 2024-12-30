@@ -16,6 +16,7 @@
 				<Item Name="Read View Settings Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Read View Settings Msg/Read View Settings Msg.lvclass"/>
 				<Item Name="Write View Settings Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Write View Settings Msg/Write View Settings Msg.lvclass"/>
 				<Item Name="Generate Controller Event Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Generate Controller Event Msg/Generate Controller Event Msg.lvclass"/>
+				<Item Name="Add Event Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Add Event Msg/Add Event Msg.lvclass"/>
 				<Item Name="Add View Msg.lvclass" Type="LVClass" URL="../Controller Actor Messages/Add View Msg/Add View Msg.lvclass"/>
 			</Item>
 			<Item Name="API Internal" Type="Folder">

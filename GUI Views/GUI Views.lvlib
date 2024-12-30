@@ -6,15 +6,18 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="Messages for this Actor" Type="Folder">
 		<Item Name="GUI Container Actror" Type="Folder">
-			<Item Name="Add View Msg.lvclass" Type="LVClass" URL="../GUI Container Actor Messages/Add View Msg/Add View Msg.lvclass"/>
-			<Item Name="Close View FP Msg.lvclass" Type="LVClass" URL="../GUI Container Actor Messages/Close View FP Msg/Close View FP Msg.lvclass"/>
-			<Item Name="Insert View into Subpanel Msg.lvclass" Type="LVClass" URL="../GUI Container Actor Messages/Insert View into Subpanel Msg/Insert View into Subpanel Msg.lvclass"/>
-			<Item Name="Open View FP Msg.lvclass" Type="LVClass" URL="../GUI Container Actor Messages/Open View FP Msg/Open View FP Msg.lvclass"/>
-			<Item Name="Register to Container Events Msg.lvclass" Type="LVClass" URL="../GUI Container Actor Messages/Register to Container Events Msg/Register to Container Events Msg.lvclass"/>
-			<Item Name="Remove View from Subpanel Msg.lvclass" Type="LVClass" URL="../GUI Container Actor Messages/Remove View from Subpanel Msg/Remove View from Subpanel Msg.lvclass"/>
-			<Item Name="Remove View Msg.lvclass" Type="LVClass" URL="../GUI Container Actor Messages/Remove View Msg/Remove View Msg.lvclass"/>
-			<Item Name="Remove View with Reply.lvclass" Type="LVClass" URL="../GUI Container Actor Messages/Remove View with Reply Msg/Remove View with Reply.lvclass"/>
-			<Item Name="Set View FP State Msg.lvclass" Type="LVClass" URL="../GUI Container Actor Messages/Set View FP State Msg/Set View FP State Msg.lvclass"/>
+			<Item Name="API" Type="Folder">
+				<Item Name="Close View FP Msg.lvclass" Type="LVClass" URL="../GUI Container Actor Messages/Close View FP Msg/Close View FP Msg.lvclass"/>
+				<Item Name="Insert View into Subpanel Msg.lvclass" Type="LVClass" URL="../GUI Container Actor Messages/Insert View into Subpanel Msg/Insert View into Subpanel Msg.lvclass"/>
+				<Item Name="Open View FP Msg.lvclass" Type="LVClass" URL="../GUI Container Actor Messages/Open View FP Msg/Open View FP Msg.lvclass"/>
+				<Item Name="Remove View from Subpanel Msg.lvclass" Type="LVClass" URL="../GUI Container Actor Messages/Remove View from Subpanel Msg/Remove View from Subpanel Msg.lvclass"/>
+				<Item Name="Set View FP State Msg.lvclass" Type="LVClass" URL="../GUI Container Actor Messages/Set View FP State Msg/Set View FP State Msg.lvclass"/>
+			</Item>
+			<Item Name="API Internal" Type="Folder">
+				<Item Name="Add View Msg.lvclass" Type="LVClass" URL="../GUI Container Actor Messages/Add View Msg/Add View Msg.lvclass"/>
+				<Item Name="Remove View Msg.lvclass" Type="LVClass" URL="../GUI Container Actor Messages/Remove View Msg/Remove View Msg.lvclass"/>
+				<Item Name="Remove View with Reply.lvclass" Type="LVClass" URL="../GUI Container Actor Messages/Remove View with Reply Msg/Remove View with Reply.lvclass"/>
+			</Item>
 		</Item>
 		<Item Name="GUI View Actor" Type="Folder">
 			<Item Name="API" Type="Folder">

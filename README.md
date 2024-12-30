@@ -6,7 +6,7 @@ This library allows the implementation of MVC patterns within the Actor Framewor
 The library further provides children of the **View Actor** that implement tools to allow for the GUI Management of the Front Panels of the Actor Cores of suitable concrete implementations. The **GUI View Actor** is a subclass of the **View Actor** that provides the functionality to manage the Front Panel (Opening, Closing, Activation, Minimization, Maximization, Hiding, etc.) of all the **Actor Core.vi** of the whole actor class hierarchy. The **GUI Container Actor** is a subclass of the **GUI View Actor** that provides the infrastructure for the management of Subpanels present in its **Actor Core.vi** allowing inserting and removing the Front Panel of the **Actor Core.vi** of the whole actor class hierarchy defined by any subclass of the **GUI View Actor**.
 
 
-## Quick Start Guide
+# Quick Start Guide
 * **Create the controller**: Create the controller by subclassing the **"Controller Actor.lvclass"** class.
 * **Define Events**: Override the **"Define Events.vi"** Controller Actor method. Therein define events by calling the method **"Add Event.vi"**. Events are subclasses of the **Event.lvclass** class. Events for the main LabVIEW types exist already. Before wiring the events to the **"Define Events.vi"** method set the event names by means of the suitable **Event.lvclass** method. 
 
@@ -32,7 +32,7 @@ The library further provides children of the **View Actor** that implement tools
 
 You will now be ready to implement your controller logic, the model that will interact the controller and the view logic. To generate and broadcast an event from the view execute the **"Generate and Broadcast Event.vi"/"Send Generate and Broadcast Event.vi"** methods, to generate and event from the controller execute the **"Generate Controller Event.vi"/"Send Generate Controller Event.vi"** methods.
 
-### GUI Views
+## GUI Views
 To implement GUI Views you have to perform the same steps as for normal views, however now you will have to subclass either the **"GUI View Actor.lvclass"** or the **"GUI Container Actor"** depending on your needs. For the **"GUI Container Actor"** perform the following additional steps
 
 * Override the "Actor Core.vi"
@@ -51,7 +51,7 @@ To implement GUI Views you have to perform the same steps as for normal views, h
 ![](Media/Exit%20Event%20Loop.png)
 
 
-## Example Code
+# Example Code
 The library comes with an example that illustrates the full API. Within the source tree the examples can be found at the path `./MVC Actors Examples`. When installing the VIPM package you will find the example at the path `(LabVIEW Root Path)/examples/LS Instruments AG/MVC Actors/MVC Actors Examples`
 
 # Methods and Classes Documentation
@@ -63,19 +63,20 @@ A child of the "Controller Actor.lvclass" defines a set of events (by overloadin
 
 ![](Media/Define_Events_Method.png)
 
-This **abstract dynamic dispatch** VI has to be overridden by the concrete Controller Actor subclasses in order to define the event served by the Controller Actor.
+This **abstract dynamic dispatch** VI has to be overridden by the concrete Controller Actor subclasses in order to define the event served by the Controller Actor. Within the concrete implementation of this abstract method the user will call the **Add Event.vi** method for each of the events to be defined. This method is automatically executed upon Controller launch, other events can be dynamically defined during the Controller execution by calling the **Add Event.vi** method.
 
-### The "Add Event.vi" Method
+### The "Add Event.vi"/"Send Add Event.vi" Methods
 
 ![](Media/Add_Event_Method.png)
+![](Media/Send_Add_Event_Method.png)
 
-This method adds an event to the list of the events handled by the Controller Actor. If the Controller Actor wants to handle the events from the View, a concrete implementation of the **"Abstract Event Handler for Controller.lvclass"** should be wired to the **"Controller Event Handler"** terminal.
+This method adds an event to the list of the events handled by the **Controller**. If the **Controller** wants to handle the events from the **View**, a concrete implementation of the **"Abstract Event Handler for Controller.lvclass"** should be wired to the **"Controller Event Handler"** terminal.
 
 ### The "Initilaize Views.vi" Method
 
 ![](Media/Initialize_Views_Method.png)
 
-This dynamic dispatch VI has to be overridden by the concrete Controller Actor subclasses in order to initialize the View Actors that are going to register for events.
+This **abstract dynamic dispatch** VI has to be overridden by the concrete **Controller** subclasses in order to initialize the **Views** that are going to register for events. Within the concrete implementation of this abstract method the user will call the **Add View.vi** method for each of the **Views** to be initialized. This method is automatically executed upon Controller launch, other events can be dynamically defined during the Controller execution by calling the **Add View.vi** method.
 
 ### The "Add View.vi"/"Send Add View.vi" Methods
 
@@ -84,7 +85,7 @@ This dynamic dispatch VI has to be overridden by the concrete Controller Actor s
 
 *Execute the **"Add View.vi"** version from other Controller methods, specifically from the **"Initialize Views.vi" method**. If you want to initialize views in any other manner, e.g. from an **"Actor Core.vi"** method then use **"Send Add View.vi"***
 
-Starts a View Actor with following settings:
+Starts a **View Actor** with following settings:
 
 **Exclude From Broadcast**: message originating from another view will not be broadcast to the view being considered    
 **Paused**: the view will not send events and will not receive them anymore  
@@ -200,6 +201,32 @@ Concrete subclasses of this class once created must be wired to the suitable cal
 
 Reads the **Event** data from the concrete implementation of the **"Abstract Event Message for View.lvclass"** abstract message sent to **View**. This method should be called within the concrete **"Do.vi"** method to read the **Event** data to be used as an argument to the call of the **View**  method designated to handle the corresponding Event.
 
+## The "Event.lvclass" Class
+This class represents the data being passed while a specific event is fired. Use this class as a base for inheritance in your specific event types. When an event is fired it's sent to all registered actors listening for it. Concrete subclasses exist already for the major LabVIEW data types and for events that carry no data (**Event Void.lvclass**). If a datatype is not covered by the predefined events you can create your own concrete subclass of this class. 
+
+**You are not supposed to use this class in your code lest some functionalities of the library will break**
+
+### The "Get Event ID.vi" Method
+![](Media/Get_Event_ID_Method.png)
+
+Gets the unique ID of the event specific class
+
+**Event ID**: string containing the unique identifier of the Event
+
+### The "Set Event Name.vi" Method
+![](Media/Set_Event_Name_Method.png)
+
+Sets the name that will define the event. You can keep the input Event object unwired if you only specify the name for event. This can be used for example while unsubscribing i.e. when only the name is needed.
+
+**IMPORTANT**:  If no name is wired or the wired string is empty, the name "Generic" will be set. This is to prevent errors with dictionary key name being empty.
+
+### The "Get Event Name.vi" Method
+![](Media/Get_Event_Name_Method.png)
+
+Get the name that defines the event.
+
+**IMPORTANT**: If no name is wired or the name string is empty, the name "Generic" will be used. This is to prevent errors with dictionary key name being empty.
+
 ## The "GUI View.lvclass" Class
 The actor **GUI View** is a subclass of the **View** that provides basic functionality for the front panel management of the **View's** **"Actor Core.vi"** VIs. Users can open, close, and set the front panel state. Since the **GUI View** can be infinitely subclassed, users can act on each of the front panels defined in the class hierarchy.
 
@@ -265,8 +292,9 @@ This method is used within the **Actor Core.vi** of the concrete **GUI Container
 
 **Subpanel References**: Array of subpanel refnums to be used as containers for **GUI Views**
 
-### The "Insert View into Subpanel.vi" Method
+### The "Insert View into Subpanel.vi"/"Send Insert View into Subpanel.vi" Methods
 ![](Media/Insert_View_into_Subpanel_Method.png)
+![](Media/Send_Insert_View_into_Subpanel_Method.png)
 
 Inserts the Front Panel of a specified **Actor Core** VI of the specified **GUI View** class hierarchy into a specified subpanel
 
@@ -276,16 +304,18 @@ Inserts the Front Panel of a specified **Actor Core** VI of the specified **GUI 
 
 **Subpanel**: string designating in which subpanel the Front Panel specified in the above terminals has to be inserted.
 
-### The "Remove View from Subpanel.vi" Method
+### The "Remove View from Subpanel.vi"/"Send Remove View from Subpanel.vi" Methods
 ![](Media/Remove_View_into_Subpanel_Method.png)
+![](Media/Send_Remove_View_into_Subpanel_Method.png)
 
 Removes the Front Panel of a specified **Actor Core.vi** VI of the specified **GUI View** class hierarchy from a specified subpanel
 
 **Subpanel**: string designating in which subpanel the Front Panel specified in the above terminals has to be inserted.
 
-### The "Open View FP.vi" Method
+### The "Open View FP.vi"/"Send Open View FP.vi" Methods
 
 ![](Media/Open_View_FP_Method.png)
+![](Media/Send_Open_View_FP_Method.png)
 
 Opens the Front Panel of a specified **Actor Core.vi** VI of the specified **GUI View** class hierarchy.
 
@@ -304,9 +334,10 @@ Opens the Front Panel of a specified **Actor Core.vi** VI of the specified **GUI
 * **4	Minimized** - Opens the front panel window as minimized.
 * **5	Maximized** - Opens the front panel window as maximized.
 
-### The "Close View FP.vi" Method
+### The "Close View FP.vi"/"Send Close View FP.vi" Methods
 
 ![](Media/Close_View_FP_Method.png)
+![](Media/Send_Close_View_FP_Method.png)
 
 Closes the Front Panel of a specified **Actor Core.vi** VI of the specified **GUI View** class hierarchy. 
 
@@ -314,9 +345,10 @@ Closes the Front Panel of a specified **Actor Core.vi** VI of the specified **GU
 
 **View Hierarchy Level**: The level on the subclassing hierarchy of the **GUI View**, it is used to choose the **Actor Core.vi** Front Panel among all the existing subclasses of the **GUI View** present in the **View** specified above.
 
-### The "Set View FP State.vi" Method
+### The "Set View FP State.vi"/"Send Set View FP State.vi" Methods
 
 ![](Media/Set_View_FP_State_Method.png)
+![](Media/Send_Set_View_FP_State_Method.png)
 
 Sets the state of the Front Panel of a specified **Actor Core.vi** VI of the the specified **GUI View** class hierarchy. 
 
