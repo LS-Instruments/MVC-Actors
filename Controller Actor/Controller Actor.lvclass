@@ -35,7 +35,6 @@
 	</Item>
 	<Item Name="Parent Libraries" Type="Parent Libraries">
 		<Item Name="Async Methods Actor.lvlib:Async Methods Actor.lvclass" Type="Parent" URL="/&lt;vilib&gt;/LS Instruments AG/Async Methods Actor/Async Methods Actor/Async Methods Actor/Async Methods Actor.lvclass"/>
-		<Item Name="IView.lvlib:IView.lvclass" Type="Parent" URL="../../../../Hardware Controller/Source/LSI Hardware Controller/View Interface/IView.lvclass"/>
 	</Item>
 	<Item Name="Controller Actor.ctl" Type="Class Private Data" URL="Controller Actor.ctl">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
