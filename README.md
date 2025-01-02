@@ -1,14 +1,14 @@
 # MVC Actors
-A library that extends the "Send Generate View Event.vi" to allow for **Model View Controller (MVC)** patterns based on a bidirectional event publisher/subscriber mechanism.
+A LabVIEW library that extends the Actor Framework to allow for **Model View Controller (MVC)** patterns based on a bidirectional event publisher/subscriber mechanism.
 
-This library allows the implementation of MVC patterns within the Actor Framework. **Controller Actors** define **View Actors** and **Events**; View Actors can subscribe to a subset of such events. Events can be fired either by the Controller Actors to all the View Actors and handled by them by suitable **Event Handlers** defined upon subscription or by View Actors to the Controller Actor, in the latter case the Controller Actor will handle them by means of suitable **Event Handlers** defined upon definition of the Events and will in turn broadcast the event to all the View actors but the one from which the Event originated. 
+This library allows the implementation of MVC patterns within the Actor Framework. **Controllers** define **Views** and **Events**; Views can subscribe to a subset of such events. Events can be fired either by the Controllers to all the Views and handled by them by suitable **Event Handlers** defined upon subscription or by Views to the Controller, in the latter case the Controller will handle them by means of suitable **Event Handlers** defined upon definition of the Events and will in turn broadcast the event to all the Views but the one from which the Event originated. 
 
-The library further provides children of the **View Actor** that implement tools to allow for the GUI Management of the Front Panels of the Actor Cores of suitable concrete implementations. The **GUI View Actor** is a subclass of the **View Actor** that provides the functionality to manage the Front Panel (Opening, Closing, Activation, Minimization, Maximization, Hiding, etc.) of all the **Actor Core.vi** of the whole actor class hierarchy. The **GUI Container Actor** is a subclass of the **GUI View Actor** that provides the infrastructure for the management of Subpanels present in its **Actor Core.vi** allowing inserting and removing the Front Panel of the **Actor Core.vi** of the whole actor class hierarchy defined by any subclass of the **GUI View Actor**.
+The library further provides children of the **View** that implement tools to allow for the GUI Management of the Front Panels of the Actor Cores of suitable concrete implementations. The **GUI View** is a subclass of the **View** that provides the functionality to manage the Front Panel (Opening, Closing, Activation, Minimization, Maximization, Hiding, etc.) of all the **Actor Core.vi** of the whole actor class hierarchy. The **GUI Container** is a subclass of the **GUI View** that provides the infrastructure for the management of Subpanels present in its **Actor Core.vi** allowing inserting and removing the Front Panel of the **Actor Core.vi** of the whole actor class hierarchy defined by any subclass of the **GUI View**.
 
 
 # Quick Start Guide
-* **Create the controller**: Create the controller by subclassing the **"Controller Actor.lvclass"** class.
-* **Define Events**: Override the **"Define Events.vi"** Controller Actor method. Therein define events by calling the method **"Add Event.vi"**. Events are subclasses of the **Event.lvclass** class. Events for the main LabVIEW types exist already. Before wiring the events to the **"Define Events.vi"** method set the event names by means of the suitable **Event.lvclass** method. 
+* **Create the controller**: Create the controller by subclassing the **"Controller.lvclass"** class.
+* **Define Events**: Override the **"Define Events.vi"** Controller method. Therein define events by calling the method **"Add Event.vi"**. Events are subclasses of the **Event.lvclass** class. Events for the main LabVIEW types exist already. Before wiring the events to the **"Define Events.vi"** method set the event names by means of the suitable **Event.lvclass** method. 
 
 ![](Media/Define%20Event.png)
 
@@ -16,8 +16,8 @@ The library further provides children of the **View Actor** that implement tools
 
 ![](Media/Event%20Handler.png)
 
-* **Create a view**: Create a view by subclassing the **"View Actor.lvclass"**
-* **Register events**: Override the **"Register Events to Controller.vi"** View Actor method. Therein register to the events defined by the controller by calling the **"Register Event.vi"** method by wiring the event classes you want to register to. Set the neames of events just as you did for the controller.
+* **Create a view**: Create a view by subclassing the **"View.lvclass"**
+* **Register events**: Override the **"Register Events to Controller.vi"** View method. Therein register to the events defined by the controller by calling the **"Register Event.vi"** method by wiring the event classes you want to register to. Set the neames of events just as you did for the controller.
 
 ![](Media/Register%20Events.png)
 
@@ -25,7 +25,7 @@ The library further provides children of the **View Actor** that implement tools
 
 ![](Media/Event%20Handler%20View.png)
 
-* **Initialize the created view in the controller**: Override the **"Initialize Views.vi"** Controller Actor method. Therein initialize the defined views by calling the **"Add View.vi"** Controller Actor method after having set a view name
+* **Initialize the created view in the controller**: Override the **"Initialize Views.vi"** Controller method. Therein initialize the defined views by calling the **"Add View.vi"** Controller method after having set a view name
 
 ![](Media/Initialize%20Views.png)
 
@@ -33,7 +33,7 @@ The library further provides children of the **View Actor** that implement tools
 You will now be ready to implement your controller logic, the model that will interact the controller and the view logic. To generate and broadcast an event from the view execute the **"Generate and Broadcast Event.vi"/"Send Generate and Broadcast Event.vi"** methods, to generate and event from the controller execute the **"Generate Controller Event.vi"/"Send Generate Controller Event.vi"** methods.
 
 ## GUI Views
-To implement GUI Views you have to perform the same steps as for normal views, however now you will have to subclass either the **"GUI View Actor.lvclass"** or the **"GUI Container Actor"** depending on your needs. For the **"GUI Container Actor"** perform the following additional steps
+To implement GUI Views you have to perform the same steps as for normal views, however now you will have to subclass either the **"GUI View.lvclass"** or the **"GUI Container Actor"** depending on your needs. For the **"GUI Container Actor"** perform the following additional steps
 
 * Override the "Actor Core.vi"
 * In its Front Panel create the subpanels you want to act as containers
@@ -56,18 +56,19 @@ The library comes with an example that illustrates the full API. Within the sour
 
 # Methods and Classes Documentation
 
-## The "Controller Actor.lvclass"  Class
-A child of the "Controller Actor.lvclass" defines a set of events (by overloading the "Define Events.vi" method and therein calling the "Add Event.vi" method for each Event to be defined) and Views (by overloading the "Initialize Views.vi" Method). Events, fired by the Controller and handled by Views, carry data and are defined subclassing the "Event Class.lvclass". Events can be also fired by Views and handled by Controllers, indeed for each event, the controller can optionally define a handler by subclassing the "Abstract Event Handler For Controller Msg.lvclass" message and implementing the "Handle Event.vi" and wire it to the Handler to the "Add Event.vi". This will allow the controller to take action upon an event fired by a View. Depending on how the events are fired they can be either targeted to all defined "Views Actors" or just a specific  "Views Actor".
+## The "Controller.lvclass"  Class
+A child of the "Controller.lvclass" defines a set of events (by overloading the "Define Events.vi" method and therein calling the "Add Event.vi" method for each Event to be defined) and Views (by overloading the "Initialize Views.vi" Method). Events, fired by the Controller and handled by Views, carry data and are defined subclassing the "Event Class.lvclass". Events can be also fired by Views and handled by Controllers, indeed for each event, the controller can optionally define a handler by subclassing the "Abstract Event Handler For Controller Msg.lvclass" message and implementing the "Handle Event.vi" and wire it to the Handler to the "Add Event.vi". This will allow the controller to take action upon an event fired by a View. Depending on how the events are fired they can be either targeted to all defined "Views Actors" or just a specific  "Views Actor".
 
 ### The "Define Events.vi" Method
 
 ![](Media/Define_Events_Method.png)
 
-This **abstract dynamic dispatch** VI has to be overridden by the concrete Controller Actor subclasses in order to define the event served by the Controller Actor. Within the concrete implementation of this abstract method the user will call the **Add Event.vi** method for each of the events to be defined. This method is automatically executed upon Controller launch, other events can be dynamically defined during the Controller execution by calling the **Add Event.vi** method.
+This **abstract dynamic dispatch** VI has to be overridden by the concrete Controller subclasses in order to define the event served by the Controller. Within the concrete implementation of this abstract method the user will call the **Add Event.vi** method for each of the events to be defined. This method is automatically executed upon Controller launch, other events can be dynamically defined during the Controller execution by calling the **Add Event.vi** method.
 
 ### The "Add Event.vi"/"Send Add Event.vi" Methods
 
 ![](Media/Add_Event_Method.png)
+
 ![](Media/Send_Add_Event_Method.png)
 
 This method adds an event to the list of the events handled by the **Controller**. If the **Controller** wants to handle the events from the **View**, a concrete implementation of the **"Abstract Event Handler for Controller.lvclass"** should be wired to the **"Controller Event Handler"** terminal.
@@ -85,7 +86,7 @@ This **abstract dynamic dispatch** VI has to be overridden by the concrete **Con
 
 *Execute the **"Add View.vi"** version from other Controller methods, specifically from the **"Initialize Views.vi" method**. If you want to initialize views in any other manner, e.g. from an **"Actor Core.vi"** method then use **"Send Add View.vi"***
 
-Starts a **View Actor** with following settings:
+Starts a **View** with following settings:
 
 **Exclude From Broadcast**: message originating from another view will not be broadcast to the view being considered    
 **Paused**: the view will not send events and will not receive them anymore  
@@ -94,24 +95,26 @@ Starts a **View Actor** with following settings:
 ### The "Remove View.vi"/"Send Remove View.vi" Methods
 
 ![](Media/Remove_View_Method.png)
+
 ![](Media/Send_Remove_View_Method.png)
 
 *Execute the **"Remove View.vi"** version from other Controller methods. If you want to remove views in any other manner, e.g. from an **"Actor Core.vi"** method then use **"Send Remove View.vi"***
 
-Stops and removes a View actor as specified by his name. Can remove all the Views if the **"Remove All (F)"** is set to true
+Stops and removes a View as specified by his name. Can remove all the Views if the **"Remove All (F)"** is set to true
 
 ### The "Generate Controller Event.vi"/"Send Generate Controller Event.vi" Methods
 ![](Media/Generate_Controller_Event_Method.png)
+
 ![](Media/Send_Generate_Controller_Event_Method.png)
 
 This method generates/fires the Event wired to the input. Firing an event looks up all actors who registered to listen to this Event and sends to them this Event on a Zero Coupling based message defined during registration. Errors on broadcasting the event i.e. enqueuer of the registrant not existing, are ignored.
 
-**IMPORTANT** - Only call this method within actor core of your Controller Actor. From helper loops call the Send Generate Event message to self. This is to make sure your actor works with all registered listeners.
+**IMPORTANT** - Only call this method within actor core of your Controller. From helper loops call the Send Generate Event message to self. This is to make sure your actor works with all registered listeners.
 
 ### The "Send Read View Settings.vi" Method
 ![](Media/Send_Read_View_Settings_Method.png)
 
-Allows  the child controller to get the behavior of a View actor specified in the **View Name** by registering to the user defined event whose reference is accessible by the **View Settings Event Ref** property that will deliver the following settings:
+Allows  the child controller to get the behavior of a View specified in the **View Name** by registering to the user defined event whose reference is accessible by the **View Settings Event Ref** property that will deliver the following settings:
 
 ![](Media/View%20Settings.png)
 
@@ -138,14 +141,15 @@ Override this method to finalize Views' initialization by generating Controller 
 ### The "Generate Event to View.vi" Method
 ![](Media/Generate_Event_to_View_Method.png)
 
-Generates the event **Event** to the View Actor with name **View Name**. This is typically used in the overridden method "Finalize View Init.vi"  to init a specific View Actor upon its launch.
+Generates the event **Event** to the View with name **View Name**. This is typically used in the overridden method "Finalize View Init.vi"  to init a specific View upon its launch.
 
-## The "View Actor.lvclass"  Class
-A child of the **"View Actor.lvclass"**, the View, is inited by a certain Controller that defines a set of Events as subclasses of the **"Event.lvclass"** class. The View can subscribe to a subset, if not all, the events defined by the Controller and handle them by subclassing the **"Abstract Event Handler for View"** message and implementing its **Do.vi** method. Subscription can be performed by implementing the **"Register Events to Controller.vi"** abstract method, which is called upon the View's launch. Therein events are subscribed by calling the **"Register Event.vi"** method providing suitable Event Handlers. Defining at least one handler is mandatory.
+## The "View.lvclass"  Class
+A child of the **"View.lvclass"**, the View, is inited by a certain Controller that defines a set of Events as subclasses of the **"Event.lvclass"** class. The View can subscribe to a subset, if not all, the events defined by the Controller and handle them by subclassing the **"Abstract Event Handler for View"** message and implementing its **Do.vi** method. Subscription can be performed by implementing the **"Register Events to Controller.vi"** abstract method, which is called upon the View's launch. Therein events are subscribed by calling the **"Register Event.vi"** method providing suitable Event Handlers. Defining at least one handler is mandatory.
 
 ### The "Generate and Broadcast Event.vi"/"Send Generate and Broadcast Event.vi" Methods
 
 ![](Media/Generate_and_Broadcast_Event_Method.png)
+
 ![](Media/Send_Generate_and_Broadcast_Event_Method.png) 
 
 This method generates/fires the **Event** wired to the input. The method checks if the view is paused or "Receive Only" and then sends the **"Generate and Broadcast Event"** message to the associated controller. The controller will in turn send the **Event** to all the Views who registered to that event but the originating View.
@@ -155,6 +159,7 @@ This method generates/fires the **Event** wired to the input. The method checks 
 ### The "Register Event.vi"/"Send Register Event.vi" Methods  
 
 ![](Media/Register_Events_Method.png)
+
 ![](Media/Send_Register_Events_Method.png)  
   
 Registers an **Event** to the Controller by specifying the concrete event and the corresponding **Event Handler**. If **"Get Last Broadcast Event (F)"** is TRUE the View will receive the last broadcast **Event**.
@@ -164,6 +169,7 @@ Registers an **Event** to the Controller by specifying the concrete event and th
 ### The "Unregister Event.vi"/"Send Unregister Event.vi" Methods  
 
 ![](Media/Unregister_Events_Method.png)
+
 ![](Media/Send_Unegister_Events_Method.png)  
   
 Unregisters an **Event** to the Controller by specifying the concrete event.
@@ -173,6 +179,7 @@ Unregisters an **Event** to the Controller by specifying the concrete event.
 ### The "Generate View Event.vi"/"Send Generate View Event.vi" Methods  
 
 ![](Media/Generate_View_Event_Method.png)
+
 ![](Media/Send_Generate_View_Event_Method.png)  
   
 This method generates/fires the **Event** wired to the input. Firing an event checks if the view is paused or "Receive Only" . This event will not be broadcast to other Views.
@@ -233,6 +240,7 @@ The actor **GUI View** is a subclass of the **View** that provides basic functio
 ### The "Open Front Panel.vi"/"Send Open Front Panel.vi" Methods
 
 ![](Media/Open_Front_Panel_Method.png)
+
 ![](Media/Send_Open_Front_Panel_Method.png)
 
 Opens the Front Panel of a specified **Actor Core.vi** VI of the specified **GUI View** class hierarchy. The method is active only if the GUI View is not contained.
@@ -253,6 +261,7 @@ Opens the Front Panel of a specified **Actor Core.vi** VI of the specified **GUI
 ### The "Close Front Panel.vi"/"Send Close Front Panel.vi" Methods
 
 ![](Media/Close_Front_Panel_Method.png)
+
 ![](Media/Send_Close_Front_Panel_Method.png)
 
 Closes the Front Panel of a specified **Actor Core.vi** VI of the specified **GUI View** class hierarchy. The method is active only if the **GUI View** is not contained. 
@@ -262,6 +271,7 @@ Closes the Front Panel of a specified **Actor Core.vi** VI of the specified **GU
 ### The "Set Front Panel State.vi"/"Send Set Front Panel State.vi" Methods
 
 ![](Media/Set_Front_Panel_State_Method.png)
+
 ![](Media/Send_Set_Front_Panel_State_Method.png)
 
 Sets the state of the Front Panel of a specified **Actor Core.vi** VI of the specified View class hierarchy. The method is active only if the GUI View is not contained.
@@ -294,6 +304,7 @@ This method is used within the **Actor Core.vi** of the concrete **GUI Container
 
 ### The "Insert View into Subpanel.vi"/"Send Insert View into Subpanel.vi" Methods
 ![](Media/Insert_View_into_Subpanel_Method.png)
+
 ![](Media/Send_Insert_View_into_Subpanel_Method.png)
 
 Inserts the Front Panel of a specified **Actor Core** VI of the specified **GUI View** class hierarchy into a specified subpanel
@@ -306,6 +317,7 @@ Inserts the Front Panel of a specified **Actor Core** VI of the specified **GUI 
 
 ### The "Remove View from Subpanel.vi"/"Send Remove View from Subpanel.vi" Methods
 ![](Media/Remove_View_into_Subpanel_Method.png)
+
 ![](Media/Send_Remove_View_into_Subpanel_Method.png)
 
 Removes the Front Panel of a specified **Actor Core.vi** VI of the specified **GUI View** class hierarchy from a specified subpanel
@@ -315,6 +327,7 @@ Removes the Front Panel of a specified **Actor Core.vi** VI of the specified **G
 ### The "Open View FP.vi"/"Send Open View FP.vi" Methods
 
 ![](Media/Open_View_FP_Method.png)
+
 ![](Media/Send_Open_View_FP_Method.png)
 
 Opens the Front Panel of a specified **Actor Core.vi** VI of the specified **GUI View** class hierarchy.
@@ -337,6 +350,7 @@ Opens the Front Panel of a specified **Actor Core.vi** VI of the specified **GUI
 ### The "Close View FP.vi"/"Send Close View FP.vi" Methods
 
 ![](Media/Close_View_FP_Method.png)
+
 ![](Media/Send_Close_View_FP_Method.png)
 
 Closes the Front Panel of a specified **Actor Core.vi** VI of the specified **GUI View** class hierarchy. 
@@ -348,6 +362,7 @@ Closes the Front Panel of a specified **Actor Core.vi** VI of the specified **GU
 ### The "Set View FP State.vi"/"Send Set View FP State.vi" Methods
 
 ![](Media/Set_View_FP_State_Method.png)
+
 ![](Media/Send_Set_View_FP_State_Method.png)
 
 Sets the state of the Front Panel of a specified **Actor Core.vi** VI of the the specified **GUI View** class hierarchy. 

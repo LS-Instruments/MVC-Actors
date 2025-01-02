@@ -5,28 +5,28 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="Messages for this Actor" Type="Folder">
-		<Item Name="GUI Container Actror" Type="Folder">
+		<Item Name="GUI Container" Type="Folder">
 			<Item Name="API" Type="Folder">
-				<Item Name="Close View FP Msg.lvclass" Type="LVClass" URL="../GUI Container Actor Messages/Close View FP Msg/Close View FP Msg.lvclass"/>
-				<Item Name="Insert View into Subpanel Msg.lvclass" Type="LVClass" URL="../GUI Container Actor Messages/Insert View into Subpanel Msg/Insert View into Subpanel Msg.lvclass"/>
-				<Item Name="Open View FP Msg.lvclass" Type="LVClass" URL="../GUI Container Actor Messages/Open View FP Msg/Open View FP Msg.lvclass"/>
-				<Item Name="Remove View from Subpanel Msg.lvclass" Type="LVClass" URL="../GUI Container Actor Messages/Remove View from Subpanel Msg/Remove View from Subpanel Msg.lvclass"/>
-				<Item Name="Set View FP State Msg.lvclass" Type="LVClass" URL="../GUI Container Actor Messages/Set View FP State Msg/Set View FP State Msg.lvclass"/>
+				<Item Name="Close View FP Msg.lvclass" Type="LVClass" URL="../GUI Container Messages/Close View FP Msg/Close View FP Msg.lvclass"/>
+				<Item Name="Insert View into Subpanel Msg.lvclass" Type="LVClass" URL="../GUI Container Messages/Insert View into Subpanel Msg/Insert View into Subpanel Msg.lvclass"/>
+				<Item Name="Open View FP Msg.lvclass" Type="LVClass" URL="../GUI Container Messages/Open View FP Msg/Open View FP Msg.lvclass"/>
+				<Item Name="Remove View from Subpanel Msg.lvclass" Type="LVClass" URL="../GUI Container Messages/Remove View from Subpanel Msg/Remove View from Subpanel Msg.lvclass"/>
+				<Item Name="Set View FP State Msg.lvclass" Type="LVClass" URL="../GUI Container Messages/Set View FP State Msg/Set View FP State Msg.lvclass"/>
 			</Item>
 			<Item Name="API Internal" Type="Folder">
-				<Item Name="Add View Msg.lvclass" Type="LVClass" URL="../GUI Container Actor Messages/Add View Msg/Add View Msg.lvclass"/>
-				<Item Name="Remove View Msg.lvclass" Type="LVClass" URL="../GUI Container Actor Messages/Remove View Msg/Remove View Msg.lvclass"/>
-				<Item Name="Remove View with Reply.lvclass" Type="LVClass" URL="../GUI Container Actor Messages/Remove View with Reply Msg/Remove View with Reply.lvclass"/>
+				<Item Name="Add View Msg.lvclass" Type="LVClass" URL="../GUI Container Messages/Add View Msg/Add View Msg.lvclass"/>
+				<Item Name="Remove View Msg.lvclass" Type="LVClass" URL="../GUI Container Messages/Remove View Msg/Remove View Msg.lvclass"/>
+				<Item Name="Remove View with Reply.lvclass" Type="LVClass" URL="../GUI Container Messages/Remove View with Reply Msg/Remove View with Reply.lvclass"/>
 			</Item>
 		</Item>
-		<Item Name="GUI View Actor" Type="Folder">
+		<Item Name="GUI View" Type="Folder">
 			<Item Name="API" Type="Folder">
-				<Item Name="Close Front Panel Msg.lvclass" Type="LVClass" URL="../GUI View Actor Messages/Close Front Panel Msg/Close Front Panel Msg.lvclass"/>
-				<Item Name="Open Front Panel Msg.lvclass" Type="LVClass" URL="../GUI View Actor Messages/Open Front Panel Msg/Open Front Panel Msg.lvclass"/>
-				<Item Name="Set Front Panel State Msg.lvclass" Type="LVClass" URL="../GUI View Actor Messages/Set Front Panel State Msg/Set Front Panel State Msg.lvclass"/>
+				<Item Name="Close Front Panel Msg.lvclass" Type="LVClass" URL="../GUI View Messages/Close Front Panel Msg/Close Front Panel Msg.lvclass"/>
+				<Item Name="Open Front Panel Msg.lvclass" Type="LVClass" URL="../GUI View Messages/Open Front Panel Msg/Open Front Panel Msg.lvclass"/>
+				<Item Name="Set Front Panel State Msg.lvclass" Type="LVClass" URL="../GUI View Messages/Set Front Panel State Msg/Set Front Panel State Msg.lvclass"/>
 			</Item>
 		</Item>
 	</Item>
-	<Item Name="GUI Container Actor.lvclass" Type="LVClass" URL="../GUI Container Actor/GUI Container Actor.lvclass"/>
-	<Item Name="GUI View Actor.lvclass" Type="LVClass" URL="../GUI View Actor/GUI View Actor.lvclass"/>
+	<Item Name="GUI Container.lvclass" Type="LVClass" URL="../GUI Container/GUI Container.lvclass"/>
+	<Item Name="GUI View.lvclass" Type="LVClass" URL="../GUI View/GUI View.lvclass"/>
 </Library>
