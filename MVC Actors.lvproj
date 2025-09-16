@@ -1,8 +1,9 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="23008000">
-	<Property Name="CCSymbols" Type="Str">AF_Debug_Trace,TRUE;</Property>
+	<Property Name="CCSymbols" Type="Str">AF_Debug_Trace,FALSE;</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
+	<Property Name="NI.Project.SaveVersion" Type="Str">Editor version</Property>
 	<Property Name="SMProvider.SMVersion" Type="Int">201310</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="IOScan.Faults" Type="Str"></Property>
@@ -38,7 +39,7 @@
 				<Item Name="Example MVC Actors.lvlib" Type="Library" URL="../Examples/Example MVC Actors.lvlib"/>
 			</Item>
 			<Item Name="GUI Views" Type="Folder">
-				<Item Name="Example GUI View.lvlib" Type="Library" URL="../Examples/Example GUI View/Example GUI View.lvlib"/>
+				<Item Name="Example GUI View.lvlib" Type="Library" URL="../Examples/Example GUI View.lvlib"/>
 			</Item>
 		</Item>
 		<Item Name="VIPM" Type="Folder">

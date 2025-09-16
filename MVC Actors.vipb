@@ -1,13 +1,13 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-01-02 16:28:23" Modified_Date="2025-01-02 16:47:46" Creator="AndreaVaccaro(LSInst" Comments="" ID="44467b6af8c2a873640dd8da47519ff7">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-01-02 16:28:23" Modified_Date="2025-09-16 18:58:13" Creator="AndreaVaccaro(LSInst" Comments="" ID="8e03e8996a0c228adeacabfacb25b76d">
   <Library_General_Settings>
     <Package_File_Name>LS_Instruments_AG_lib_MVC_Actors</Package_File_Name>
-    <Library_Version>1.0.0.2</Library_Version>
+    <Library_Version>2.0.0.3</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>VIPM</Library_Output_Folder>
     <Company_Name>LS Instruments AG</Company_Name>
     <Library_Summary/>
-    <Library_License/>
+    <Library_License>BSD-3-Clause license</Library_License>
     <Package_LabVIEW_Version>23.3 (64-bit)</Package_LabVIEW_Version>
     <Community_Edition>true</Community_Edition>
     <Package_Icon>00000D7E002800000C9A00000400000200020022002200080000000000FFFFFF00FF80000000FFFFFFFFFFFF0000FFFFFFFFCCCC0000FFFFFFFF99990000FFFFFFFF66660000FFFFFFFF33330000FFFFFFFF00000000FFFFCCCCFFFF0000FFFFCCCCCCCC0000FFFFCCCC99990000FFFFCCCC66660000FFFFCCCC33330000FFFFCCCC00000000FFFF9999FFFF0000FFFF9999CCCC0000FFFF999999990000FFFF999966660000FFFF999933330000FFFF999900000000FFFF6666FFFF0000FFFF6666CCCC0000FFFF666699990000FFFF666666660000FFFF666633330000FFFF666600000000FFFF3333FFFF0000FFFF3333CCCC0000FFFF333399990000FFFF333366660000FFFF333333330000FFFF333300000000FFFF0000FFFF0000FFFF0000CCCC0000FFFF000099990000FFFF000066660000FFFF000033330000FFFF000000000000CCCCFFFFFFFF0000CCCCFFFFCCCC0000CCCCFFFF99990000CCCCFFFF66660000CCCCFFFF33330000CCCCFFFF00000000CCCCCCCCFFFF0000CCCCCCCCCCCC0000CCCCCCCC99990000CCCCCCCC66660000CCCCCCCC33330000CCCCCCCC00000000CCCC9999FFFF0000CCCC9999CCCC0000CCCC999999990000CCCC999966660000CCCC999933330000CCCC999900000000CCCC6666FFFF0000CCCC6666CCCC0000CCCC666699990000CCCC666666660000CCCC666633330000CCCC666600000000CCCC3333FFFF0000CCCC3333CCCC0000CCCC333399990000CCCC333366660000CCCC333333330000CCCC333300000000CCCC0000FFFF0000CCCC0000CCCC0000CCCC000099990000CCCC000066660000CCCC000033330000CCCC0000000000009999FFFFFFFF00009999FFFFCCCC00009999FFFF999900009999FFFF666600009999FFFF333300009999FFFF000000009999CCCCFFFF00009999CCCCCCCC00009999CCCC999900009999CCCC666600009999CCCC333300009999CCCC0000000099999999FFFF000099999999CCCC0000999999999999000099999999666600009999999933330000999999990000000099996666FFFF000099996666CCCC0000999966669999000099996666666600009999666633330000999966660000000099993333FFFF000099993333CCCC0000999933339999000099993333666600009999333333330000999933330000000099990000FFFF000099990000CCCC000099990000999900009999000066660000999900003333000099990000000000006666FFFFFFFF00006666FFFFCCCC00006666FFFF999900006666FFFF666600006666FFFF333300006666FFFF000000006666CCCCFFFF00006666CCCCCCCC00006666CCCC999900006666CCCC666600006666CCCC333300006666CCCC0000000066669999FFFF000066669999CCCC0000666699999999000066669999666600006666999933330000666699990000000066666666FFFF000066666666CCCC0000666666669999000066666666666600006666666633330000666666660000000066663333FFFF000066663333CCCC0000666633339999000066663333666600006666333333330000666633330000000066660000FFFF000066660000CCCC000066660000999900006666000066660000666600003333000066660000000000003333FFFFFFFF00003333FFFFCCCC00003333FFFF999900003333FFFF666600003333FFFF333300003333FFFF000000003333CCCCFFFF00003333CCCCCCCC00003333CCCC999900003333CCCC666600003333CCCC333300003333CCCC0000000033339999FFFF000033339999CCCC0000333399999999000033339999666600003333999933330000333399990000000033336666FFFF000033336666CCCC0000333366669999000033336666666600003333666633330000333366660000000033333333FFFF000033333333CCCC0000333333339999000033333333666600003333333333330000333333330000000033330000FFFF000033330000CCCC000033330000999900003333000066660000333300003333000033330000000000000000FFFFFFFF00000000FFFFCCCC00000000FFFF999900000000FFFF666600000000FFFF333300000000FFFF000000000000CCCCFFFF00000000CCCCCCCC00000000CCCC999900000000CCCC666600000000CCCC333300000000CCCC0000000000009999FFFF000000009999CCCC0000000099999999000000009999666600000000999933330000000099990000000000006666FFFF000000006666CCCC0000000066669999000000006666666600000000666633330000000066660000000000003333FFFF000000003333CCCC0000000033339999000000003333666600000000333333330000000033330000000000000000FFFF000000000000CCCC0000000000009999000000000000666600000000000033330000EEEE000000000000DDDD000000000000BBBB000000000000AAAA0000000000008888000000000000777700000000000055550000000000004444000000000000222200000000000011110000000000000000EEEE000000000000DDDD000000000000BBBB000000000000AAAA0000000000008888000000000000777700000000000055550000000000004444000000000000222200000000000011110000000000000000EEEE000000000000DDDD000000000000BBBB000000000000AAAA0000000000008888000000000000777700000000000055550000000000004444000000000000222200000000000011110000EEEEEEEEEEEE0000DDDDDDDDDDDD0000BBBBBBBBBBBB0000AAAAAAAAAAAA0000888888888888000077777777777700005555555555550000444444444444000022222222222200001111111111110000000000000000252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525FF252525FF25FF25FF2525FFFF25252525252525252525252525252525252525FFFF25FFFF25FF25FF25FF2525FF252525252525252525252525252525252525FF25FF25FF25FF25FF25FF252525252525252525252525252525252525252525FF252525FF2525FF2525FF2525FF252525252525252525252525252525252525FF252525FF2525FF252525FFFF25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525FFFF252525FFFF2525FFFFFF2525FFFF2525FFFFFF252525FFFFFF2525252525FFFF2525FF2525FF2525FF2525FF2525FF25FF2525FF25FF25252525252525FF2525FF25FF2525252525FF2525FF2525FF25FFFFFF252525FFFF2525252525FFFFFFFF25FF2525FF2525FF2525FF2525FF25FF2525FF25252525FF25252525FF2525FF2525FFFF252525FF252525FFFF2525FF2525FF25FFFFFF2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525250000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002900000012000000020000000D01000000000100000000000A000000080000000000240024002900000012000000020000000D00FAFAFA00010000000000100000001000000002002300000000000000000023002900000012000000020000000D00FFFFFF00010000000000100000001000000002002200010001000100010022002900000012000000020000000D00FAFAFA00010000000000100000001000000002000000240024002400240000002900000012000000020000000D00F8F8F800010000000000100000001000000002000100230023002300230001</Package_Icon>
@@ -16,7 +16,15 @@
     <Target>LabVIEW</Target>
   </Library_General_Settings>
   <Advanced_Settings>
-    <Package_Dependencies/>
+    <Package_Dependencies>
+      <External_Dependencies>ls_instruments_ag_lib_async_methods_actor &gt;= 0.3.0.4</External_Dependencies>
+      <External_Dependencies>oglib_error &gt;= 6.0.0.26</External_Dependencies>
+      <External_Dependencies>oglib_lvdata &gt;= 6.0.0.45</External_Dependencies>
+      <Additional_External_Dependencies>vipm_lib_labview_collection_extensions &gt;=0.4.1.39</Additional_External_Dependencies>
+      <Direct_Dependencies>ls_instruments_ag_lib_async_methods_actor-0.3.0.4</Direct_Dependencies>
+      <Direct_Dependencies>oglib_error-6.0.0.26</Direct_Dependencies>
+      <Direct_Dependencies>oglib_lvdata-6.0.0.45</Direct_Dependencies>
+    </Package_Dependencies>
     <Custom_Action_VIs>
       <Pre-Build_VI/>
       <Post-Build_VI/>
@@ -27,14 +35,14 @@
     </Custom_Action_VIs>
     <VI_Package_Configuration_File>MVC Actors.vipc</VI_Package_Configuration_File>
     <Description>
-      <One_Line_Description_Summary>A LabVIEW library that extends the Actor Framework to allow for Model View Controller (MVC) patterns based on a bidirectional event publisher/subscriber mechanism.</One_Line_Description_Summary>
+      <One_Line_Description_Summary>A LabVIEW Actor Framework library implementing Model-View-Controller (MVC) patterns with bidirectional event publisher/subscriber mechanism and GUI management tools.</One_Line_Description_Summary>
       <Description>This library allows the implementation of MVC patterns within the Actor Framework. &lt;b&gt;Controllers&lt;/b&gt; define &lt;b&gt;Views&lt;/b&gt; and &lt;b&gt;Events&lt;/b&gt;; Views can subscribe to a subset of such events. Events can be fired either by the Controllers to all the Views and handled by them by suitable &lt;b&gt;Event Handlers&lt;/b&gt; defined upon subscription or by Views to the Controller, in the latter case the Controller will handle them by means of suitable &lt;b&gt;Event Handlers&lt;/b&gt; defined upon definition of the Events and will in turn broadcast the event to all the Views but the one from which the Event originated. 
 
 The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implement tools to allow for the GUI Management of the Front Panels of the Actor Cores of suitable concrete implementations. The &lt;b&gt;GUI View&lt;/b&gt; is a subclass of the &lt;b&gt;View&lt;/b&gt; that provides the functionality to manage the Front Panel (Opening, Closing, Activation, Minimization, Maximization, Hiding, etc.) of all the &lt;b&gt;Actor Core.vi&lt;/b&gt; of the whole actor class hierarchy. The &lt;b&gt;GUI Container&lt;/b&gt; is a subclass of the &lt;b&gt;GUI View&lt;/b&gt; that provides the infrastructure for the management of Subpanels present in its &lt;b&gt;Actor Core.vi&lt;/b&gt; allowing inserting and removing the Front Panel of the &lt;b&gt;Actor Core.vi&lt;/b&gt; of the whole actor class hierarchy defined by any subclass of the &lt;b&gt;GUI View&lt;/b&gt;.</Description>
       <Copyright/>
       <Packager>Andrea Vaccaro </Packager>
-      <URL/>
-      <Release_Notes/>
+      <URL>https://github.com/LS-Instruments/MVC-Actors</URL>
+      <Release_Notes>First public release.</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -141,7 +149,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples</Path>
       </Place_Folder_Contents>
     </Source_Files>
-    <License_Agreement_Filepath/>
+    <License_Agreement_Filepath>LICENSE</License_Agreement_Filepath>
     <Licensing_and_Activation>
       <License_LF_file_path/>
       <Licensed_library_file_path/>
@@ -352,7 +360,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>View Messages</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>A20F32FC16B97512120FFA836D527F03</GUID>
+      <GUID>B03BF90D8C5E57B072047B5B3AFCD844</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -793,7 +801,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Controller\Write View Settings.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>BEEDEB3D5ABEA2B59D438184F0C1B2B1</GUID>
+      <GUID>3490F2289F4101D66792C7043D8CF448</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -968,7 +976,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Controller Messages\Write View Settings Msg</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>25E469156A66FA20D072769A84DC52B8</GUID>
+      <GUID>14F1A66822E55D76099669C851D52CC2</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1073,7 +1081,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Event\Set Event Name.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>F7CD5AF15D53C854F8CD270A451F509C</GUID>
+      <GUID>88C196EA8BCBEBA93E2BD13DE5CEF46E</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1248,7 +1256,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Event Data Types\Event U8</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>F860038D031D6068A21438E1473AF39D</GUID>
+      <GUID>A5C7872D5EF9CA201352735863B10E25</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1297,7 +1305,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Event Handlers\Abstract Event Message for View</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>711EC1DA9E17E3FDF299BAE4FAAB7336</GUID>
+      <GUID>4A227777BADE131A441482335C4E6F34</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1416,21 +1424,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Timed Loop Controller</Path>
         <VI_Title/>
       </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>Main</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>2</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>Examples\Launcher.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <GUID>9DE495FED4D90E0B0BEDB4D9CF090929</GUID>
+      <GUID>09C93F746DF1668C8684F26457D1A41B</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1521,7 +1515,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>GUI Views\GUI View Messages</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>C21391DFF8935BDE2178021B32465478</GUID>
+      <GUID>9319F8FA913B2B02852A81434A822D73</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1626,7 +1620,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>View\Unregister Event.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>A5E6408765682FDAE448F6169A305D07</GUID>
+      <GUID>4A83606427C3E0ACE22794CF268839FA</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -1759,7 +1753,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>View Messages\Write Receive Only Msg</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>FAC31AB77A0FAE09B6CE2EA7C22B5424</GUID>
+      <GUID>7552B35EA9B6CC803848D837A9167B12</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -1808,7 +1802,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Controller\properties\Read View Settings Event Ref.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>CF4302FDCB521F12CEBF7FA293A25961</GUID>
+      <GUID>DD20A53D9481B2E15BCA5D43FAC77869</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -1857,7 +1851,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Controller Messages\Add Event Msg\Send Add Event.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>B5A2CE8865F07C76D2F9BD9905E8F00D</GUID>
+      <GUID>5723B717B8779A7A37BF28DBD525C254</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -1906,7 +1900,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Controller Messages\Add View Msg\Send Add View.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>04CDFDF689540E5F70D2AF24E2B11EB2</GUID>
+      <GUID>B656E98B6DB116F82FA74035911F9853</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -1955,7 +1949,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Controller Messages\Finalize View Init Msg\Send Finalize View Init.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>456A3F7262B4278253BE72F0F05D881E</GUID>
+      <GUID>D93F86CAA0C685AED84B71ACB8A36C00</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -2004,7 +1998,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Controller Messages\Generate Controller Event Msg\Send Generate Controller Event.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>4927598733770C2A6BBD32C6DDD244F9</GUID>
+      <GUID>C50C6BC54C8E186EF5FAFCD43A323BA5</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -2053,7 +2047,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Controller Messages\Handle and Broadcast Event Msg\Send Handle and Broadcast Event.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>42194CA114932D944460695702042510</GUID>
+      <GUID>AA84D2F52D2FD1D8965320787251739B</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -2102,7 +2096,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Controller Messages\Handle Event Msg\Send Handle Event.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>AFCAF63E7378EC339585936669BEE756</GUID>
+      <GUID>B0DC5DF70E47FC6A5DCFA0062A48A5CE</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -2151,7 +2145,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Controller Messages\Read View Settings Msg\Send Read View Settings.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>0A7B76874CA8FC754E49B3B4F2926DD1</GUID>
+      <GUID>7C185DCD5201546435A59C08A0C62078</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -2200,7 +2194,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Controller Messages\Register by Name Msg\Send Register by Name.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>03EDD99BEF1972C914C207BB1BEAEA34</GUID>
+      <GUID>5B5CA808562008ED9F1F780ADFA789A1</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -2249,7 +2243,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Controller Messages\Remove View Msg\Send Remove View.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>6CAFA8F869E8382A1EF7A82CE92B04E5</GUID>
+      <GUID>BDE922A83FA01CA839D6BDCEED67B5F3</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -2298,7 +2292,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Controller Messages\Unregister by Name Msg\Send Unregister by Name.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>B00738F805875DA898D064646B6D71B2</GUID>
+      <GUID>247D0361DA04D1CBA9A34347F554200E</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -2347,7 +2341,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Controller Messages\Write View Settings Msg\Send Write View Settings.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>7690F5F21E48A078443A277BD052F16C</GUID>
+      <GUID>FD3D4C4FFB3E4A09EDBA9C227C0F245F</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>4</Parent_Palette_Index>
@@ -2396,7 +2390,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Event Data Types\Event Boolean\Write Boolean.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>9F797E72F0FC6F34D60AFB18EBB94D92</GUID>
+      <GUID>A2555774CEF5C84470669E01E4E3D366</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>4</Parent_Palette_Index>
@@ -2445,7 +2439,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Event Data Types\Event Double\Write Double.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>B218617CF1B6482EEB24C84FBCA0CF23</GUID>
+      <GUID>7D9086228069776FF8368E1738334F86</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>4</Parent_Palette_Index>
@@ -2494,7 +2488,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Event Data Types\Event I16\Write I16.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>5D5C8AC0972C162B9ED7095C5C915986</GUID>
+      <GUID>D0B523A143F3C81D55FC93F6A66A2DCD</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>4</Parent_Palette_Index>
@@ -2543,7 +2537,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Event Data Types\Event I32\Write I32.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>79D3E30A0B8E91745C32FF6E87D08202</GUID>
+      <GUID>41CF625E1D559A33F3C39BF8662E5561</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>4</Parent_Palette_Index>
@@ -2592,7 +2586,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Event Data Types\Event I64\Write I64.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>F2662CFF320913C68DEF02E319CFC1E0</GUID>
+      <GUID>E82A1E020C6EC9F4F9FCCF4742F65166</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>4</Parent_Palette_Index>
@@ -2641,7 +2635,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Event Data Types\Event I8\Write I8.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>7F02A6C1D64D2E708DBC04CB7BC206F0</GUID>
+      <GUID>CC25F831F2F7732753C7DC5CBB2F6A6D</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>4</Parent_Palette_Index>
@@ -2690,7 +2684,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Event Data Types\Event String\Write String.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>9C798E14CDD8E2877C1300FCE37174D0</GUID>
+      <GUID>6567F7E551176616F78BB3C11169B169</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>4</Parent_Palette_Index>
@@ -2739,7 +2733,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Event Data Types\Event U16\Write U16.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>6A027DE75309C858832DBA65D5F0986F</GUID>
+      <GUID>5D2C8F6B442A3FB68355E850F54B87C8</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>4</Parent_Palette_Index>
@@ -2788,7 +2782,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Event Data Types\Event U32\Write U32.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>C2222124D101541F123D6EDB9A32C208</GUID>
+      <GUID>C75754D83D68E9151570954E39269E00</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>4</Parent_Palette_Index>
@@ -2837,7 +2831,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Event Data Types\Event U64\Write U64.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>7793441299F251392D721A3A2868689A</GUID>
+      <GUID>983F51F8EB6036115400EBDF8B55B679</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>4</Parent_Palette_Index>
@@ -2886,7 +2880,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Event Data Types\Event U8\Write U8.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>8C678F7C4004430757D3865D890F3150</GUID>
+      <GUID>C4BF2F9E5F53E0B5416EB7F1637ED387</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>5</Parent_Palette_Index>
@@ -2935,7 +2929,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Event Handlers\Abstract Event Handler for Controller\Handle Event.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>A6C541F79CE1D03F243425F089D73698</GUID>
+      <GUID>5FFC1C8AD765374EEDC9EEA9E76546BF</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>5</Parent_Palette_Index>
@@ -2998,7 +2992,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Event Handlers\Abstract Event Message for View\Write Event Data.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>8A97FF69C92908A2A0E603EDFC5F12FE</GUID>
+      <GUID>A343C86ACF963361A5D9417DAB2CBB49</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>6</Parent_Palette_Index>
@@ -3047,7 +3041,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example Controller\Example Controller Messages</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>0C477DACB2FE1E5B4A6F4F33444C4D13</GUID>
+      <GUID>8CEF9A158CDDF8063B761F9EAFABF928</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>6</Parent_Palette_Index>
@@ -3082,7 +3076,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example Controller Actor\Example Controller Actor</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>AB1A663F97538FB137BB7E7D1F1CEF5B</GUID>
+      <GUID>CB3320251788313448732E07B34583C5</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>6</Parent_Palette_Index>
@@ -3159,7 +3153,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example Events\Write Timestamp.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>B626D7BB84FEA4260628CFB133A4C368</GUID>
+      <GUID>5AC018E0A01C7322CD2DB96BAF558BB2</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>6</Parent_Palette_Index>
@@ -3236,21 +3230,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example GUI View\Example GUI View Messages</Path>
         <VI_Title/>
       </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>Main</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>5</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>Examples\Example GUI View\Launcher.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <GUID>FB48E9C5B25602ACBC1C2921E13BDFBC</GUID>
+      <GUID>F7F41F7497F76100F83197A35E7848A2</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>6</Parent_Palette_Index>
@@ -3313,7 +3293,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example View\Example View Messages</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>1B1CA5633C2870FDAD3EE29442B2639C</GUID>
+      <GUID>38D983619573E31A269CEF8B05EDE1A6</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>6</Parent_Palette_Index>
@@ -3362,7 +3342,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example View Actor\Example View Actor Messages</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>03593A13D1706BB73DBEBAC996E52B97</GUID>
+      <GUID>F210524510D0831B7A7010AFE46E4CAD</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>6</Parent_Palette_Index>
@@ -3411,7 +3391,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Timed Loop Controller\Timed Loop Controller Messages</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>C9DC05BC6A13DAC26154CDA066C085A7</GUID>
+      <GUID>F32F1ED9809F615540432AD1F54F86EB</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>35</Parent_Palette_Index>
@@ -3572,7 +3552,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example Controller\Example Controller\Write Boolean Notifier.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>BE153DA4966B76A047EFF056C15D77C3</GUID>
+      <GUID>C3FF8E12E7C69420CA8F8DA79B5B8F60</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>35</Parent_Palette_Index>
@@ -3621,7 +3601,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example Controller\Example Controller Messages\Update Boolean Event Msg</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>4D60D5E4215BF5D40B699C83EFCCFB95</GUID>
+      <GUID>6544065C7109277F8A7F61AD93EA7D7B</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>42</Parent_Palette_Index>
@@ -3656,7 +3636,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example Controller\Example Controller\properties\Write View Type.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>E641DAF1DEB6A83B8E6FBFBB4A4140BC</GUID>
+      <GUID>FE56399117B98D286FFF56831E33D0DB</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>43</Parent_Palette_Index>
@@ -3705,7 +3685,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example Controller\Example Controller Messages\Launch Feature Test View Msg\Send Launch Feature Test View.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>9F5C949BB71AA5806D673F51EC03DC9F</GUID>
+      <GUID>A9E2190C8988DB87EB25583E8FA889FD</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>43</Parent_Palette_Index>
@@ -3740,7 +3720,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example Controller\Example Controller Messages\Update Boolean Event Msg\Handle Event.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>0C99490D7A8B1BAEF784AE77C77E13DD</GUID>
+      <GUID>6686630914F469B2473307FC704D3D25</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>36</Parent_Palette_Index>
@@ -3775,7 +3755,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Controller Messages\Add Event Msg\Do.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>E234E54674419B9C05E3FE879749AAB4</GUID>
+      <GUID>CE94D24F9D0B51BD84AC58252CBA1E12</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>38</Parent_Palette_Index>
@@ -3880,7 +3860,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example GUI View\Example Controller\Stop Core.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>CC098E4935DE650CF8D4FE5188802CCE</GUID>
+      <GUID>0C4C64777CEF77A964D576F1A25DC2ED</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>38</Parent_Palette_Index>
@@ -3915,7 +3895,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example GUI View\Example GUI Container\Actor Core.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>0223EE451087DA666809B81F7C9BBCE2</GUID>
+      <GUID>9A8320D681973469640977BA34919F3E</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>38</Parent_Palette_Index>
@@ -4006,7 +3986,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example GUI View\Example GUI View\Update Time.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>F02CE644CA01F7AA3E69429ABAE63AA9</GUID>
+      <GUID>22D3F09A28EB1B51E16A8A6830F8E540</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>38</Parent_Palette_Index>
@@ -4069,7 +4049,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example GUI View\Example GUI View Messages\Update Time Event Msg</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>0EF8E365075E8B56A36840020A14FAC8</GUID>
+      <GUID>8634E63FAA0909CF2A299CDAD498095B</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>51</Parent_Palette_Index>
@@ -4104,7 +4084,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example GUI View\Example GUI View Messages\Update Array Event Msg\Do.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>937FEDE0F69B5622D6D6EC339DCA4C6B</GUID>
+      <GUID>87B47FB8AEDCE9DD07C7C3C41DDF9E5D</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>51</Parent_Palette_Index>
@@ -4139,7 +4119,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example GUI View\Example GUI View Messages\Update Boolean Event Msg\Do.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>B990547EB12B56143CE601E5A3E917D0</GUID>
+      <GUID>8403462E6A498ABE98A08F9C7415947C</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>51</Parent_Palette_Index>
@@ -4174,7 +4154,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example GUI View\Example GUI View Messages\Update Time Event Msg\Do.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>2DF0AB23CBD9CF8153A5A887D413F162</GUID>
+      <GUID>37EE593B1B3E00180272417AE11723B1</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>39</Parent_Palette_Index>
@@ -4279,7 +4259,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example View\Example View\Update Time.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>954CED1B827A87E08FB2FA0B5E455F0C</GUID>
+      <GUID>37824451B97EF763E2A71F1CF6717D0B</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>39</Parent_Palette_Index>
@@ -4328,7 +4308,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example View\Example View 2\Update Boolean.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>ED791959591F0C976BE0BE160761F292</GUID>
+      <GUID>738F9A97FF5F3C9405471A445DFB69B1</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>39</Parent_Palette_Index>
@@ -4419,7 +4399,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example View\Example View Messages\Update Updated At Event Msg</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>EB34B40D5B0CAA37EDAE4A73DE7E743B</GUID>
+      <GUID>9CB1BB3AE387C13E115DEB3D35114AD0</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>57</Parent_Palette_Index>
@@ -4454,7 +4434,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example View\Example View Messages\Example View 2\Update Boolean Event Msg</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>B45EF671944B4B0AEC8FB0CC40B27B89</GUID>
+      <GUID>AEDE8E54C6CAD8E54DE9EF47C3A93649</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>57</Parent_Palette_Index>
@@ -4489,7 +4469,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example View\Example View Messages\Update Array Event Msg\Do.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>B8B9C6C71303C4A989095AE3B436B4E3</GUID>
+      <GUID>5FDEBF710654ED74C3FF5C570EA1D9BE</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>57</Parent_Palette_Index>
@@ -4524,7 +4504,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example View\Example View Messages\Update Boolean Event Msg\Do.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>30A638F67EA5B77865D8D37F53DC738A</GUID>
+      <GUID>A5285435E2A98CF6B9E8939183B937CE</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>57</Parent_Palette_Index>
@@ -4559,7 +4539,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example View\Example View Messages\Update Time Event Msg\Do.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>EE39D5C59183AB58B1C9C6ED465A05B0</GUID>
+      <GUID>01FF295C5D37442D19445973BE0DCDE8</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>57</Parent_Palette_Index>
@@ -4594,7 +4574,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example View\Example View Messages\Update Updated At Event Msg\Do.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>DBE77427E38C6E6B164751604C4A3C9F</GUID>
+      <GUID>C4D82CD756805D738332DF0D17A11601</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>58</Parent_Palette_Index>
@@ -4629,7 +4609,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example View\Example View Messages\Example View 2\Update Boolean Event Msg\Do.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>95D9FCD9BFAC5807832B357FCD65DE6F</GUID>
+      <GUID>ACB8A5AEBD75C1667BEA23B6053E516D</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>40</Parent_Palette_Index>
@@ -4664,7 +4644,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example GUI View\Example GUI View\Register Events to Controller.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>72D1CD0BDC89BEA9779E294BE1A5CDCE</GUID>
+      <GUID>E96374F54BDFFA525EDFBA71FFD91524</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>40</Parent_Palette_Index>
@@ -4699,7 +4679,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example View Actor\Example View Actor Messages\Broadcast Boolean Msg</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>316CCDAF97807FA254CDEBB44D8E3B83</GUID>
+      <GUID>8A7C92DA56E9CB4AEE3F1C1D4037D448</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>65</Parent_Palette_Index>
@@ -4734,7 +4714,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Controller Messages\Add Event Msg\Do.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>D0A3382B7563608508F4F74016DA3EAB</GUID>
+      <GUID>D766BBFD3C170DFA1880912631C07C6C</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>41</Parent_Palette_Index>
@@ -4797,7 +4777,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Timed Loop Controller\Timed Loop Controller\Write Poll Rate.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>95C005FA7BF469668684B3A26C56CE20</GUID>
+      <GUID>881C9579B82F86B7AE4A5E3A65346D84</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>41</Parent_Palette_Index>
@@ -4832,7 +4812,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Timed Loop Controller\Timed Loop Controller Messages\Update Msg</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>D03139B6D0F40A8008C423F36D97A0AF</GUID>
+      <GUID>89536C136DFAAC374707BEF546104312</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>68</Parent_Palette_Index>
@@ -4881,7 +4861,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Timed Loop Controller\Timed Loop Controller Messages\Update Msg\Send Update.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>5F853B409DFEBA39AF34207F38DBE651</GUID>
+      <GUID>FD584883386E170408EDF728D851CF14</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>7</Parent_Palette_Index>
@@ -5196,7 +5176,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>GUI Views\GUI Container\Store Subpanel References.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>2D4BAB80B5CD46A5F9833456D0156D0B</GUID>
+      <GUID>A06755AB07FB947EFA490BB59A153360</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>7</Parent_Palette_Index>
@@ -5217,7 +5197,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
         <Synchronize_Directory_Path>GUI Views\GUI Container Actor</Synchronize_Directory_Path>
       </Synchronization_Info>
-      <GUID>F73FB3F1D7CAD655B6AA1169931EAAAF</GUID>
+      <GUID>3056F5EBE1362811A183ECAC570B7E9B</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>7</Parent_Palette_Index>
@@ -5350,7 +5330,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>GUI Views\GUI Container Messages\Set View FP State Msg</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>EBC1E9B5189C4DB5CD00AF1B89A011B2</GUID>
+      <GUID>5194E196349D6E72448F5C5C2F3C0DD8</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>7</Parent_Palette_Index>
@@ -5553,7 +5533,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>GUI Views\GUI View\Write Front Panels Start State.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>4A7B427EA6B2F6F5E27145F2C5671C02</GUID>
+      <GUID>517816BF08C397D21CA0BD2AAED23ACF</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>7</Parent_Palette_Index>
@@ -5616,7 +5596,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>GUI Views\GUI View Messages\Set Front Panel State Msg</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>535AE01FE2263D2F05FEADFA43AC1F32</GUID>
+      <GUID>57F33581A817D03B29317F0298BD0459</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>70</Parent_Palette_Index>
@@ -5651,7 +5631,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>GUI Views\GUI Container\properties\Read Views User Event Ref.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>DE3B9E4FD130626A06353A3B9B9960D8</GUID>
+      <GUID>9EB4D8D81C88CA003A35E604EF2957E8</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>72</Parent_Palette_Index>
@@ -5700,7 +5680,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>GUI Views\GUI Container Messages\Add View Msg\Send Add View.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>CD05ED1B17FD6163E8BF2368CBD15EDF</GUID>
+      <GUID>03A53E7244D5EEB9C44A7E0459A4182C</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>72</Parent_Palette_Index>
@@ -5749,7 +5729,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>GUI Views\GUI Container Messages\Close View FP Msg\Send Close View FP.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>CD3E7A3A8EF670CBDEADC80C570781BC</GUID>
+      <GUID>D0040C27E2A578F70418602E0DDE217B</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>72</Parent_Palette_Index>
@@ -5798,7 +5778,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>GUI Views\GUI Container Messages\Insert View into Subpanel Msg\Send Insert View into Subpanel.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>7923BF169A64684EBB5E79CE70FF537F</GUID>
+      <GUID>089E472C90FD9A53CA66EEA1FA1B961F</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>72</Parent_Palette_Index>
@@ -5847,7 +5827,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>GUI Views\GUI Container Messages\Open View FP Msg\Send Open View FP.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>BD7B9B5CB2B63EB46561BB8ED9B98EFD</GUID>
+      <GUID>24A3BB17D5AA6FCDC5C83499CCE14C4B</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>72</Parent_Palette_Index>
@@ -5896,7 +5876,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>GUI Views\GUI Container Messages\Remove View from Subpanel Msg\Send Remove View from Subpanel.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>F97DF8BFD6E7628C5B0B54FA494035F8</GUID>
+      <GUID>D4082C4F084D33741E3B23FBD068F727</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>72</Parent_Palette_Index>
@@ -5945,7 +5925,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>GUI Views\GUI Container Messages\Remove View Msg\Send Remove View.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>9A695FABE408D114E202CE8538CD7440</GUID>
+      <GUID>B9CD6C083D04454CEEDA183513239B3D</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>72</Parent_Palette_Index>
@@ -5994,7 +5974,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>GUI Views\GUI Container Messages\Remove View with Reply Msg\Send Remove View with Reply.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>18D581A90C8A49D9267F8BC1903F53EF</GUID>
+      <GUID>9940633FE37B879C491C4D15AA5E1E0B</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>72</Parent_Palette_Index>
@@ -6043,7 +6023,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>GUI Views\GUI Container Messages\Set View FP State Msg\Send Set View FP State.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>EE2CA5C5BB699A81AF7BC94DEC05A502</GUID>
+      <GUID>6344483C7F7B60232EAA19B7B741B53F</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>73</Parent_Palette_Index>
@@ -6134,7 +6114,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>GUI Views\GUI View\properties\Write Remove View Timeout (1000 ms).vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>3745FD735A8BB4B7E9BFF7FDB758F77F</GUID>
+      <GUID>19BF4F678F06845340F4A8CFF860FE61</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>74</Parent_Palette_Index>
@@ -6183,7 +6163,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>GUI Views\GUI View Messages\Close Front Panel Msg\Send Close Front Panel.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>FC3D118A8283F2905AD4FDEF67C84E4D</GUID>
+      <GUID>909A124AD6213513A3987211F259C69C</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>74</Parent_Palette_Index>
@@ -6232,7 +6212,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>GUI Views\GUI View Messages\Open Front Panel Msg\Send Open Front Panel.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>45401EF69C56DE72A998D0F5FA42A78A</GUID>
+      <GUID>27E069B30AF00F2C3B617EC20685EBA5</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>74</Parent_Palette_Index>
@@ -6281,7 +6261,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>GUI Views\GUI View Messages\Set Front Panel State Msg\Send Set Front Panel State.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>CD7925B5237B6EE0CEA23C928A8DE551</GUID>
+      <GUID>44C440C9C18E77D1C634351260DE512D</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>8</Parent_Palette_Index>
@@ -6414,7 +6394,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>View\properties\Write Receive Only.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>EAF50D93ED3600F474DA907C5D045B2F</GUID>
+      <GUID>AC13C3BA956A3F13661D56B17A327F8B</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>9</Parent_Palette_Index>
@@ -6463,7 +6443,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>View Messages\Generate and Broadcast Event Msg\Send Generate and Broadcast Event.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>6E3B3009766BD1888EEAC7E4CA0984AC</GUID>
+      <GUID>F95997D64B82D4091A3EAB8F33AFC692</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>9</Parent_Palette_Index>
@@ -6512,7 +6492,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>View Messages\Generate View Event Msg\Send Generate View Event.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>327BEC63566DEA4D2211D2FC1AF7D8C1</GUID>
+      <GUID>CA07CAD864B6860E4ADA846FE11E303C</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>9</Parent_Palette_Index>
@@ -6561,7 +6541,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>View Messages\Register Event Msg\Send Register Event.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>D169868C59045FD200896FE7CA3482AC</GUID>
+      <GUID>E1F42907EB5188B44693C64B018EA9FE</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>9</Parent_Palette_Index>
@@ -6610,7 +6590,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>View Messages\Register Events to Controller Msg\Send Register Events to Controller.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>5D7DD73E93488D8D3B4A8CF6D1C4C50E</GUID>
+      <GUID>5826C9AD8C088AFEE15FE5C911EBA048</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>9</Parent_Palette_Index>
@@ -6659,7 +6639,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>View Messages\Unregister Event Msg\Send Unregister Event.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>AD7ADB09ABC7CB39E8C5D89D36B4A40B</GUID>
+      <GUID>2314B2B153F90CD238CF12F6E361E363</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>9</Parent_Palette_Index>
@@ -6708,7 +6688,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>View Messages\Write Controller Actor Enqueuer Msg\Send Write Controller Actor Enqueuer.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>8231BBA5D369E448318E6982521FD941</GUID>
+      <GUID>970EEB722D42C3D928CDDFE3C2EC9764</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>9</Parent_Palette_Index>
@@ -6757,7 +6737,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>View Messages\Write Paused Msg\Send Write Paused.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>385AEBC0B14CCAE09662C1941D0F955B</GUID>
+      <GUID>166C1959EA5DB4F331DDBC783B6BDD21</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>9</Parent_Palette_Index>
@@ -6806,7 +6786,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>View Messages\Write Receive Only Msg\Send Write Receive Only.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>8755EB082D9CE02D1F28BDCD1C62B74B</GUID>
+      <GUID>0A45A75A37E95D46A2D3C0999DB8B3FB</GUID>
     </Functions_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>-1</Parent_Palette_Index>
@@ -6869,7 +6849,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>GUI Views</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>3E48903EC750C52AA709B9FD4B0105DA</GUID>
+      <GUID>77B8B7C99E1B4D8E9A759BD7F6AC56BA</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -6960,7 +6940,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Controller\View Settings.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>0123502B4972816485B9F5FC9D086B9E</GUID>
+      <GUID>1BA0A4A75A3502DDA838FC5AD3D933A6</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -6995,7 +6975,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example Controller</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>C7375750A043B90C797D56F14B609A96</GUID>
+      <GUID>28B5ABC73EEED2321FD84E9D81F966E4</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -7030,7 +7010,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>GUI Views\GUI Container</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>EDBD70B2A7DF5CCCE982925307E991CB</GUID>
+      <GUID>112BE89AE2987D05D4A6F9B467C39072</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -7065,7 +7045,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example Controller\Example Controller</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>61A71FCEEC991C6AD6C14B5D019935D6</GUID>
+      <GUID>0B1572BE933B6597BBD4106FE377BDDB</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>4</Parent_Palette_Index>
@@ -7100,7 +7080,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Examples\Example Controller\Example Controller\Registered Views.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>4F32F7C2C4F45140FCBACFE94703648D</GUID>
+      <GUID>64D6848A171995E8CD93487E1560C4F8</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>3</Parent_Palette_Index>
@@ -7135,7 +7115,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>GUI Views\GUI Container\typedefs</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>80412801AFEAC9E281176A6FEA7EAAEA</GUID>
+      <GUID>D3C19A4388BA1DBE48F80634D1310A11</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>6</Parent_Palette_Index>
@@ -7226,7 +7206,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>GUI Views\GUI Container\typedefs\View Status.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>440726A1D8C52CDD893F0972693AF8B6</GUID>
+      <GUID>C16C689D12BA70464FD37055FFA2FE42</GUID>
     </Controls_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
