@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-01-02 16:28:23" Modified_Date="2025-09-17 18:42:04" Creator="AndreaVaccaro(LSInst" Comments="" ID="6f49717e7718fd4ca1e4cc6e1bcf6d2c">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-01-02 16:28:23" Modified_Date="2025-09-22 23:36:37" Creator="AndreaVaccaro(LSInst" Comments="" ID="1e3a1a5482381182c1ec676c9fb67f10">
   <Library_General_Settings>
     <Package_File_Name>LS_Instruments_AG_lib_MVC_Actors</Package_File_Name>
-    <Library_Version>2.0.0.7</Library_Version>
+    <Library_Version>2.0.1.2</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>VIPM</Library_Output_Folder>
@@ -42,7 +42,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
       <Copyright/>
       <Packager>Andrea Vaccaro </Packager>
       <URL>https://github.com/LS-Instruments/MVC-Actors</URL>
-      <Release_Notes>We have streamlined and optimized the Functions Palette</Release_Notes>
+      <Release_Notes>Refactored error generation. MVC Actors defined errors are installed by the VIPM package and can be selected through  the Error Ring</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -62,7 +62,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
       </Custom_Probes>
       <Custom_Errors>
         <Preserve_Hierarchy>true</Preserve_Hierarchy>
-        <Path/>
+        <Path>&lt;project&gt;\errors</Path>
       </Custom_Errors>
       <Help_Files>
         <Preserve_Hierarchy>true</Preserve_Hierarchy>
@@ -126,6 +126,12 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
       <Destination_Overrides>
         <Path>Examples</Path>
         <Destination>1</Destination>
+        <Additional_Destination>false</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>Errors/MVC-Actors-errors.txt</Path>
+        <Destination>3</Destination>
         <Additional_Destination>false</Additional_Destination>
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
@@ -360,7 +366,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Palette\Add MVC Actors to Project.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>01BA89CCD4297308EC7ADC4D06C35AFA</GUID>
+      <GUID>C369E5213BEB2D90D298BC381ADB0449</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -577,7 +583,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Controller\Generate Event to View.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>4159CEC15417ABA220AED4D4C5A6AC6F</GUID>
+      <GUID>2E354E1A1E2B9CE3E8DC3500DE24AB67</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -668,7 +674,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>Event\Get Event Name.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>2ACDF951788DABB7FA7919434F41121D</GUID>
+      <GUID>70037E5DCF1FE6D2C3B124228F4128FC</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -717,7 +723,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>GUI Views\GUI View</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>F660E76D77CC79FF9CF7FA3886B1FB11</GUID>
+      <GUID>091DED58892E584C38855057F88B2362</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -864,7 +870,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>View Messages\Unregister Event Msg\Send Unregister Event.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>9A35E7C1BBFBCF858CAF14FB8BB0DE3A</GUID>
+      <GUID>4728EE6F4D34450F67D3F205CD7C1039</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>3</Parent_Palette_Index>
@@ -1067,7 +1073,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>GUI Views\GUI Container\Exit Event Loop.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>994A9B895BC84FF053F10800363103C7</GUID>
+      <GUID>BEC82778C5F79317630AE7358DB3A221</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>3</Parent_Palette_Index>
@@ -1172,7 +1178,7 @@ The library further provides children of the &lt;b&gt;View&lt;/b&gt; that implem
         <Path>GUI Views\GUI View Messages\Set Front Panel State Msg\Send Set Front Panel State.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>C2F1FEFE7DCD1EAFAB9D35C5F5780467</GUID>
+      <GUID>24619025438C3FF444945D93C61C0999</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

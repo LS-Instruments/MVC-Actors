@@ -143,6 +143,15 @@ Override this method to finalize Views' initialization by generating Controller 
 
 Generates the event **Event** to the View with name **View Name**. This is typically used in the overridden method "Finalize View Init.vi"  to init a specific View upon its launch.
 
+### Warnings
+#### 512100: The Event you are trying to add to the Controller has been already added.
+
+This warning is thrown by the **Add Event.vi** method when you try to add an event that was already added previously. 
+
+#### 512101: The event you are trying to register to, has not been added to the Controller.
+
+This warning is thrown by the **Register.vi** method when a certain **View** is trying to register to an **Event** that has never been added to the **Controller**
+
 ## The "View.lvclass"  Class
 A child of the **"View.lvclass"**, the View, is inited by a certain Controller that defines a set of Events as subclasses of the **"Event.lvclass"** class. The View can subscribe to a subset, if not all, the events defined by the Controller and handle them by subclassing the **"Abstract Event Handler for View"** message and implementing its **Do.vi** method. Subscription can be performed by implementing the **"Register Events to Controller.vi"** abstract method, which is called upon the View's launch. Therein events are subscribed by calling the **"Register Event.vi"** method providing suitable Event Handlers. Defining at least one handler is mandatory.
 
@@ -287,6 +296,13 @@ Sets the state of the Front Panel of a specified **Actor Core.vi** VI of the spe
 * **4	Minimized** - Opens the front panel window as minimized.
 * **5	Maximized** - Opens the front panel window as maximized.
 
+### Warnings
+
+#### 512106: The view hierarchy level doesn't exist. Check the View class hierarchy.
+
+This warning is thrown by the **Read View FP and VI Refs.vi** method, when trying to obtain the the FP and VI references of a **GUI View** at a non-existing class hierarchy.
+
+
 ## The "GUI Container.lvclass" Class
 The actor **GUI Container** is in a subclass of the **GUI View** that adds all the infrastructure required to contain GUI Views in subpanels. Once **GUI Views** are contained in a certain **GUI Container** their management is done through the methods provided by the **GUI Container**. Subpanels are defined in the **GUI Container**'s **Actor Core.vi** by explicitly storing their references in the actor by means of an appropriate method and are referenced by their label name. **GUI Views** are instead referenced by their name as of their definition in the corresponding controller. For each contained **GUI View** the **GUI Container** provides all the front panel management functionality provided by the **GUI View** plus: 
 * adding and removing **GUI Views**
@@ -385,3 +401,24 @@ Sets the state of the Front Panel of a specified **Actor Core.vi** VI of the the
 ![](Media/Register_to_Container_Events_Method.png)
 
 This method can be used in the **Actor Core.vi** of the subclass of the **GUI Container Actor**. It will register two events created by the **GUI Container Actor**, one can be used to exit the helper loop if present, and the other can be used to allow the optional event loop to receive the views contained by the "GUI Container Actor". Calling this method is optional. See the examples for an illustration of its usage.
+
+### Warnings
+
+#### 512102: The reference of the subpanel whose status you are trying to obtain was not stored in the GUI Container.
+
+This warning is thrown by the **Get Subpanel Status.vi** method, when trying to obtain the status of a subpanel that wasn't stored in the **Container**
+
+#### 512103: The View whose subpanel you are trying to obtain has not been added to the GUI Container.
+
+This warning is thrown by the **Get View Status.vi** method, when trying to obtain the status of a **GUI View** that wasn't stored in the **Container**. It an be triggered when performing actions on a **GUI View** that wasn't added to any subpanel of the **Container**.
+
+#### 512104: The view hierarchy level of the view doesn't exist. Check the View class hierarchy.
+
+This warning is thrown by the **Read View FP and VI Refs.vi** method, when trying to obtain the the FP and VI references of a **GUI View** at a non-existing class hierarchy.
+
+### Errors
+
+#### 512105: The array of subpanel references points to subpanels that don't have unique captions. Captions are used to differentiate panels, please use unique subpanel captions names.
+
+This error is thrown by the **Store Subpanel References.vi** method, when trying to to store reference to subpanels that don't have unique captions. Captions are used to point to subpanels and hence need to be unique.
+

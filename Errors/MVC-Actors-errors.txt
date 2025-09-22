@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<nidocument>
+<nicomment>
+Custom error codes defined by the "MVC Actors" library.
+
+
+
+
+<nifamily familyname="MVC Actors" displayname="MVC Actors">
+</nifamily>
+</nicomment>
+<nierror code="512100">
+The Event you are trying to add to the Controller has been already added.
+</nierror>
+<nierror code="512101">
+The event you are trying to register to, has not been added to the Controller.
+</nierror>
+<nierror code="512102">
+The reference of the subpanel whose status you are trying to obtain was not stored in the GUI Container.
+</nierror>
+<nierror code="512103">
+The View whose subpanel you are trying to obtain has not been added to the GUI Container.
+</nierror>
+<nierror code="512104">
+The view hierarchy level of the view doesn't exist. Check the View class hierarchy.
+</nierror>
+<nierror code="512105">
+The array of subpanel references points to subpanels that don't have unique captions. Captions are used to differentiate panels, please use unique subpanel captions names.
+</nierror>
+<nierror code="512106">
+The view hierarchy level doesn't exist. Check the View class hierarchy.
+</nierror>
+</nidocument>

@@ -1,4 +1,6 @@
 MVC Actors Release Notes
+v2.0.1
+* Refactored error generation. MVC Actors defined errors are installed by the VIPM package and can be selected through the Error Ring
 v2.0.0
 * First public release renamed to MVC Actors and available as VIPM package
 v1.1.0
