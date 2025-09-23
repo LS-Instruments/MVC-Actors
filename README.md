@@ -109,7 +109,7 @@ Stops and removes a View as specified by his name. Can remove all the Views if t
 
 This method generates/fires the Event wired to the input. Firing an event looks up all actors who registered to listen to this Event and sends to them this Event on a Zero Coupling based message defined during registration. Errors on broadcasting the event i.e. enqueuer of the registrant not existing, are ignored.
 
-**IMPORTANT** - Only call this method within actor core of your Controller. From helper loops call the Send Generate Event message to self. This is to make sure your actor works with all registered listeners.
+**IMPORTANT** - Only call this method within methods of your **Controller**. From helper loops call the Send Generate Event message to self. This is to make sure your actor works with all registered listeners.
 
 ### The "Send Read View Settings.vi" Method
 ![](Media/Send_Read_View_Settings_Method.png)
