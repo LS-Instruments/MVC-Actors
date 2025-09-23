@@ -1,3 +1,6 @@
+
+[![Image](https://www.vipm.io/package/ls_instruments_ag_lib_mvc_actors/badge.svg?metric=installs)](https://www.vipm.io/package/ls_instruments_ag_lib_mvc_actors/)
+
 # MVC Actors
 A LabVIEW library that extends the Actor Framework to allow for **Model View Controller (MVC)** patterns based on a bidirectional event publisher/subscriber mechanism.
 
