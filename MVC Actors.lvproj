@@ -45,7 +45,7 @@
 			<Item Name="MVC Actors.vipb" Type="Document" URL="../MVC Actors.vipb"/>
 		</Item>
 		<Item Name="Errors" Type="Folder">
-			<Item Name="Install Error Codes.vi" Type="VI" URL="../Install Error Codes.vi"/>
+			<Item Name="Install Error Codes.vi" Type="VI" URL="../Errors/Install Error Codes.vi"/>
 			<Item Name="MVC-Actors-errors.txt" Type="Document" URL="../Errors/MVC-Actors-errors.txt"/>
 		</Item>
 		<Item Name="GUI Views.lvlib" Type="Library" URL="../GUI Views/GUI Views.lvlib"/>
