@@ -1,6 +1,4 @@
 
-[![Image](https://www.vipm.io/package/ls_instruments_ag_lib_mvc_actors/badge.svg?metric=installs)](https://www.vipm.io/package/ls_instruments_ag_lib_mvc_actors/)
-
 # MVC Actors
 A LabVIEW library that extends the Actor Framework to allow for **Model View Controller (MVC)** patterns based on a bidirectional event publisher/subscriber mechanism.
 
@@ -8,8 +6,12 @@ This library allows the implementation of MVC patterns within the Actor Framewor
 
 The library further provides children of the **View** that implement tools to allow for the GUI Management of the Front Panels of the Actor Cores of suitable concrete implementations. The **GUI View** is a subclass of the **View** that provides the functionality to manage the Front Panel (Opening, Closing, Activation, Minimization, Maximization, Hiding, etc.) of all the **Actor Core.vi** of the whole actor class hierarchy. The **GUI Container** is a subclass of the **GUI View** that provides the infrastructure for the management of Subpanels present in its **Actor Core.vi** allowing inserting and removing the Front Panel of the **Actor Core.vi** of the whole actor class hierarchy defined by any subclass of the **GUI View**.
 
+# VIPM Pakcage
+
+[![Image](https://www.vipm.io/package/ls_instruments_ag_lib_mvc_actors/badge.svg?metric=installs)](https://www.vipm.io/package/ls_instruments_ag_lib_mvc_actors/) [![Image](https://www.vipm.io/package/ls_instruments_ag_lib_mvc_actors/badge.svg?metric=stars)](https://www.vipm.io/package/ls_instruments_ag_lib_mvc_actors/)
 
 # Quick Start Guide
+* Install the VIPM package by means of the VIPM package manger.
 * **Create the controller**: Create the controller by subclassing the **"Controller.lvclass"** class.
 * **Define Events**: Override the **"Define Events.vi"** Controller method. Therein define events by calling the method **"Add Event.vi"**. Events are subclasses of the **Event.lvclass** class. Events for the main LabVIEW types exist already. Before wiring the events to the **"Define Events.vi"** method set the event names by means of the suitable **Event.lvclass** method. 
 
@@ -425,3 +427,6 @@ This warning is thrown by the **Read View FP and VI Refs.vi** method, when tryin
 
 This error is thrown by the **Store Subpanel References.vi** method, when trying to to store reference to subpanels that don't have unique captions. Captions are used to point to subpanels and hence need to be unique.
 
+# Contributing
+
+Feel free to fork and submit pull requests. After cloning the repository, the best way to install the required dependencies is to install the VIPM pakcage.
